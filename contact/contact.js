@@ -32,7 +32,20 @@ cross.addEventListener("click", () => {
 });
 
 // ------------------  Date and Month setup------------------
-const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",];
+const months = [
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec",
+];
 
 const now = new Date();
 const getDate = now.getDate();
@@ -57,7 +70,7 @@ const branches = [
     src: "../aseets/letters-contact/letter-d.png",
     focal_person: "Muhammad Ashraf",
     email: "www.acshr.org.pk",
-    location: "House No. 102, Soomra Muhallah, Phulji Station, District Dadu."
+    location: "House No. 102, Soomra Muhallah, Phulji Station, District Dadu.",
   },
   {
     city: "District Office",
@@ -66,7 +79,7 @@ const branches = [
     src: "../aseets/letters-contact/letter-b.png",
     focal_person: "Rizwan Ali",
     email: "www.acshr.org.pk",
-    location: "House No. 08, Ali Town Bypass Road, Badin"
+    location: "House No. 08, Ali Town Bypass Road, Badin",
   },
   {
     city: "District Office",
@@ -75,7 +88,8 @@ const branches = [
     src: "../aseets/letters-contact/letter-s.png",
     focal_person: "Syed Umais Shah",
     email: "www.acshr.org.pk",
-    location: "House No. D-516/133, Molvi Abdullah Street Near Nishat Cinema, Barrage Road, Sukkur."
+    location:
+      "House No. D-516/133, Molvi Abdullah Street Near Nishat Cinema, Barrage Road, Sukkur.",
   },
   {
     city: "Provincial Office",
@@ -84,7 +98,8 @@ const branches = [
     src: "../aseets/letters-contact/letter-q.png",
     focal_person: "Abdul Ghafar Jamali",
     email: "www.acshr.org.pk",
-    location: "House No. 51-opposite Fatima Complex Near Saigon Restaurant Phase-3 Shahbaz Town, Quetta"
+    location:
+      "House No. 51-opposite Fatima Complex Near Saigon Restaurant Phase-3 Shahbaz Town, Quetta",
   },
   {
     city: "District Office",
@@ -93,7 +108,8 @@ const branches = [
     src: "../aseets/letters-contact/letter-k.png",
     focal_person: "Adeel Ahmed Vistro",
     email: "www.acshr.org.pk",
-    location: "House No. F-416/133, Sheesham Colony, Luqman Phatak, Khairpur Mirs, Sindh."
+    location:
+      "House No. F-416/133, Sheesham Colony, Luqman Phatak, Khairpur Mirs, Sindh.",
   },
   {
     city: "District Office",
@@ -102,10 +118,9 @@ const branches = [
     src: "../aseets/letters-contact/letter-u.png",
     focal_person: "Abdul Haq Soomro",
     email: "www.acshr.org.pk",
-    location: "House No. E-101/122, Near Govt Hospital, Umekot, Sindh."
-  }
+    location: "House No. E-101/122, Near Govt Hospital, Umekot, Sindh.",
+  },
 ];
-
 
 document.addEventListener("DOMContentLoaded", () => {
   const branchSection = document.getElementById("branchSection");
@@ -134,10 +149,14 @@ function initializeTooltips() {
   );
   classes.forEach((cls) => {
     const classContent = cls.classList.contains("google")
-      ? "Google" : cls.classList.contains("linkedin")
-        ? "Linkedin" : cls.classList.contains("facebook")
-          ? "Facebook" : cls.classList.contains("tiktok")
-            ? "Twitter" : "";
+      ? "Google"
+      : cls.classList.contains("linkedin")
+      ? "Linkedin"
+      : cls.classList.contains("facebook")
+      ? "Facebook"
+      : cls.classList.contains("tiktok")
+      ? "Twitter"
+      : "";
 
     tippy(cls, {
       content: classContent,
@@ -146,3 +165,77 @@ function initializeTooltips() {
   });
 }
 initializeTooltips();
+
+// ------------------ Contact  Form EmailJs Funationality ------------------
+
+(function () {
+  emailjs.init("AEzGJ1ZcmyBFL0EcY");
+})();
+
+// document
+//   .getElementById("contact-form")
+//   .addEventListener("submit", function (event) {
+//     event.preventDefault(); // Prevent form's default submit behavior
+//     emailjs.sendForm("acshr-emailJs-serviceID", "template_acshr", this).then(
+//       function () {
+//         Toastify({
+//           text: "Message sent successfully!",
+//           duration: 1500,
+//           delay: 1000,
+//           gravity: "top",
+//           position: "center",
+//           backgroundColor: "#0c860d",
+//           color: "var(--darkGreen)",
+//           className: "toastify-center",
+//           avatar: "../aseets/imgs/user-Authorize.png",
+//         }).showToast();
+//       },
+//       function (error) {
+//         Toastify({
+//           text: JSON.stringify(error),
+//           duration: 1500,
+//           delay: 1000,
+//           gravity: "top",
+//           position: "center",
+//           backgroundColor: "#0c860d",
+//           color: "var(--darkGreen)",
+//           className: "toastify-center",
+//           avatar: "../aseets/imgs/user-Unauthorize.png",
+//         }).showToast();
+//       }
+//     );
+//   });
+document
+  .querySelector("#contactForm")
+  ?.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    emailjs.sendForm("acshr_f3o0go8", "template_acshr", this).then(
+      function (response) {
+        Toastify({
+          text: "Message sent successfully!",
+          duration: 1500,
+          delay: 1000,
+          gravity: "top",
+          position: "center",
+          backgroundColor: "#0c860d",
+          color: "var(--darkGreen)",
+          className: "toastify-center",
+          avatar: "../aseets/imgs/user-Authorize.png",
+        }).showToast();
+      },
+      function (error) {
+        Toastify({
+          text: "Oops! Something went wrong. Please try again.",
+          duration: 1500,
+          delay: 1000,
+          gravity: "top",
+          position: "center",
+          backgroundColor: "#0c860d",
+          color: "var(--darkGreen)",
+          className: "toastify-center",
+          avatar: "../aseets/imgs/user-Unauthorize.png",
+        }).showToast();
+      }
+    );
+  });

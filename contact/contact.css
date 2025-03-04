@@ -16,7 +16,9 @@
 body {
   margin: 0 auto !important;
 }
-
+a{
+  color: var(--white);
+}
 /********* scrollbar css ************/
 ::-webkit-scrollbar {
   width: 6px !important;

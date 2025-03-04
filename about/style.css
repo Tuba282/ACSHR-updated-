@@ -250,10 +250,10 @@ h2 {
   text-align: center;
   flex-direction: column;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(https://scontent.fkhi17-2.fna.fbcdn.net/v/t39.30808-6/472269722_582599887821395_3285935566953892677_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeG8zZ6VcICf6Lj-j_74TbPuvQqi7FvzwTC9CqLsW_PBMK4wJYEd_HPG8Lpr2x8MtFCysNH0qXtDxFU09YknGQHw&_nc_ohc=Xdqe9NzTc9sQ7kNvgFnFwdz&_nc_oc=Adjdf45BOusr6QGCg3qO2RUpcr-IhkbMDUq5AYvXuADLxLF7Es60jCZdtxbRqm4l7dQ&_nc_zt=23&_nc_ht=scontent.fkhi17-2.fna&_nc_gid=ARXjKSk7yfEQrwYcey0pwow&oh=00_AYCbjOurgXWPCr1eNSmokXQxImQQb3NFGTNGNAiRCYyp0g&oe=67BE6808)
+    url(../aseets/imgs/acshr-\(7\).jpg)
       no-repeat center;
   background-size: cover;
-  background-position: bottom center;
+  background-position: center;
   background-attachment: fixed;
   color: var(--white);
 }
@@ -670,17 +670,28 @@ h2 {
 }
 
 /* gallery section css */
-.topGallery {
-  margin-top: 30px;
-}
-
 .gallery {
-  width: 100% !important;
+  width: 100%;
 }
 
 .galeryImg {
-  width: 60px;
-  height: 60px;
+  width: 250px;
+  height: 144px;
+}
+
+.galeryImg:hover {
+  filter: grayscale(0%);
+}
+
+.profileSwiperImg {
+  width: 300px;
+  height: 300px;
+}
+
+.galleryWapper {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
 }
 
 /* feedback section css */
