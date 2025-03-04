@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ACSHR | Home</title>
+  <link rel="shortcut icon" href="./aseets/contact img/web-icon.png" type="image/x-icon" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+  <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+  <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconify/iconify@latest/dist/iconify.min.js">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <!-- custom style sheet -->
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <div class="mainContainer">
+    <div class="subContainer">
+      <!-- for fixed width layout -->
+      <nav id="navbar">
+        <div class="logo" data-aos="fade-up" data-aos-duration="1000">
+          <img src="/aseets/contact img/ASCHR-logo.png" class="logoImg glow" />
+        </div>
+        <div class="links">
+          <div class="donate" onclick="window.location.replace('./contact/contact.html#donate')" data-aos="fade-up" data-aos-duration="1000">Donate Now</div>
+          <img src="./aseets/icons/navIcons-(1).png" data-aos="fade-right" data-aos-duration="4000" 
+            class="navLink glow" onclick="let gUrl=`https:www.facebook.com/profile.php?id=100083460453968&sk=followers`;window.location.replace(gUrl)" />
+          <img src="./aseets/icons/navIcons-(4).png" data-aos="fade-right" data-aos-duration="2000"
+            class="navLink glow" onclick="let fbUrl=`https:www.facebook.com/profile.php?id=100083460453968`;window.location.replace(fbUrl)"/>
+
+          <img src="./aseets/icons/bar.png" class="bar glow" id="bar" />
+        </div>
+        <div class="overLay">
+          <div class="subOverlay">
+            <img src="./aseets/icons/cross.png" id="cross" class="glow" />
+            <ul type="none" class="overlayUl">
+              <li>
+                <img src="./aseets/icons/li.png" width="15" height="15" /><a href="/index.html">
+                  Home</a>
+              </li>
+              <li>
+                <img src="./aseets/icons/li.png" width="15" height="15" /><a href="./about/index.html">
+                  About</a>
+              </li>
+              <li>
+                <img src="./aseets/icons/li.png" width="15" height="15" /><a href="./gallery/gal.html">
+                  Gallery</a>
+              </li>
+              <li>
+                <img src="./aseets/icons/li.png" width="15" height="15" /><a href="./contact/contact.html">
+                  Contact</a>
+              </li>
+              <li>
+                <img src="./aseets/icons/li.png" width="15" height="15" /><a href="./login/login.html">
+                  SignUp</a>
+              </li>
+            </ul>
+            <img src="./aseets/icons/ver-line.png" class="overlayImg1" height="400" width="50" />
+            <img src="./aseets/icons/hor-line.png" class="overlayImg2" />
+            <div class="overlayDiv">
+              <img src="/aseets/contact img/web-icon.png" width="150" height="150" class="overlayLogo" />
+              <h2>Our Promise</h2>
+              <p>
+                The Alliance of the Civil Society for Human Rights (ACSHR), founded in February 2010 in Karachi, is a
+                national NGO formed by local Pakistani intellectuals and community members. ACSHR supports vulnerable
+                communities in urban and rural Pakistan by providing sustainable livelihood opportunities, education,
+                primary health care, and employment. Registered with the Sub-registrar of Gulshan Iqbal Town, Karachi,
+                ACSHR focuses on sustainable, community-based programs that align with national and international
+                strategies.
+              </p>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- hero section -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- first slider -->
+          <div class="swiper-slide swiperDiv">
+            <video
+              playsinline=""
+              autoplay=""
+              loop=""
+              muted=""
+              class="swiperVideo"
+            >
+              <source src="./aseets/video/ACSHR-video-1.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <!-- second slider -->
+          <div class="swiper-slide swiperDiv">
+            <video
+              playsinline=""
+              autoplay=""
+              loop=""
+              muted=""
+              class="swiperVideo"
+            >
+              <source src="./aseets/video/ACSHR-video-2.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <!-- third slider -->
+          <div class="swiper-slide swiperDiv">
+            <video
+              playsinline=""
+              autoplay=""
+              loop=""
+              muted=""
+              class="swiperVideo"
+            >
+              <source src="./aseets/video/ACSHR-video-3.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            effect: "fade",
+            loop: true,
+            centeredSlides: true,
+            autoplay: {
+              delay: 5300,
+              disableOnInteraction: false,
+            },
+          });
+        </script>
+      </div>
+      <!-- show Menu -->
+      <div id="showMenu">
+        <div class="trusted"></div>
+      </div>
+      <br><br>
+      <!-- discover div -->
+      <div class="discover">
+        <h2 class="heading" data-aos="fade-down">Promoting Sustainable Livelihoods and Human Rights for All Communities
+        </h2>
+        <p class="text" data-aos="fade-up">
+          Alliance of the Civil Society for Human Rights (ACSHR) is a national NGO founded in February 2010 in Karachi.
+          It aims to support vulnerable communities in Pakistan through sustainable livelihood interventions, offering
+          better education, primary healthcare, and employment opportunities while upholding human rights, peace, and
+          good governance. ACSHR's programs are holistic, people-centered, and community-based, aligning with both
+          international and national humanitarian strategies. Registered with the Sub-registrar of Gulshan Iqbal Town
+          Karachi, ACSHR utilizes local solutions to address community challenges and needs.
+        </p>
+      </div><br><br>
+      <!-- icon special -->
+      <div class="iconSpecial">
+        <div class="special special-1" data-aos="fade-right" data-aos-duration="1000">
+          <img src="./aseets/icons/iconSpecial-(2).png" width="100" height="100" />
+          <p>
+            <span class="specialSpan">Empowering Vulnerable Communities</span><br /><br />
+            Providing support through sustainable livelihood interventions. Ensuring better education, healthcare, and
+            employment opportunities.
+          </p>
+        </div>
+        <div class="special special-2" data-aos="fade-right" data-aos-duration="15000">
+          <img src="./aseets/icons/iconSpecial-(3).png" width="100" height="100" />
+          <p>
+            <span class="specialSpan">Holistic Development Programs</span><br /><br />
+            Implementing people-centered, community-based solutions. Aligning with international and national
+            humanitarian strategies.
+          </p>
+        </div>
+        <div class="special special-3" data-aos="fade-right" data-aos-duration="2000">
+          <img src="./aseets/icons/iconSpecial-(1).png" width="100" height="100" />
+          <p>
+            <span class="specialSpan">Local Solutions for Global Challenges</span><br /><br />
+            Utilizing home-ground strategies to address community needs. Focused on sustainable, long-term development.
+          </p>
+        </div>
+      </div><br><br>
+      
+      <!-- long gallery section -->
+      <div class="longGal">
+        <h2>Gallery</h2>
+        <div class="galImgs">
+          <div class="col col-1" data-aos="fade-up">
+          </div>
+          <div class="col col-2" data-aos="fade-up">
+          </div>
+          <div class="col col-3" data-aos="fade-up">
+          </div>
+          <div class="col col-4" data-aos="fade-up">
+          </div>
+          <div class="col col-4 col-4-1" data-aos="fade-up">
+          </div>
+          <div class="col col-5" data-aos="fade-up">
+          </div>
+          <div class="col col-6" data-aos="fade-up">
+          </div>
+          <div class="col col-7" data-aos="fade-up">
+          </div>
+          <div class="col col-8" data-aos="fade-up">
+          </div>
+          <div class="col col-9" data-aos="fade-up">
+          </div>
+          <div class="col col-9-1" data-aos="fade-up">
+          </div>
+          <div class="col col-10" data-aos="fade-up">
+          </div>
+          <div class="col col-11" data-aos="fade-up">
+          </div>
+          <div class="col col-12" data-aos="fade-up">
+          </div>
+          <div class="col col-13" data-aos="fade-up">
+          </div>
+        </div>
+      </div>
+
+      <!-- choose section -->
+      <div class="choose"><br><br>
+        <h2 data-aos="zoom-in" data-aos-duration="1000">Our Objectives</h2>
+        <div class="chooseDiv">
+          <div class="chooseCard chooseCard-1" data-aos="fade-up" data-aos-duration="1000">
+            <img src="./aseets/imgs/choose-1.png" width="80" height="80" />
+            <h4>Sustainable Food Security</h4>
+            <p>
+              <span class="chooseSpan">
+                Initiate sustainable methods to reduce malnutrition and improve self-sufficiency.
+            </p>
+          </div>
+          <div class="chooseCard chooseCard-2" data-aos="fade-down" data-aos-duration="1000">
+            <img src="./aseets/imgs/choose-2.png" width="80" height="80" />
+            <h4>Quality Education Access</h4>
+            <p>
+              <span class="chooseSpan">
+                Increase education access for vulnerable children and improve teaching quality.
+            </p>
+          </div>
+          <div class="chooseCard chooseCard-3" data-aos="fade-up" data-aos-duration="1000">
+            <img src="./aseets/imgs/choose-3.png" width="80" height="80" />
+            <h4>Safe Water & Sanitation</h4>
+            <p>
+              <span class="chooseSpan">
+                Ensure sustainable access to safe water and sanitation for everyone.
+            </p>
+          </div>
+
+
+          <div class="chooseCard chooseCard-4" data-aos="fade-down" data-aos-duration="1000">
+            <img src="./aseets/imgs/choose-4.png" width="80" height="80" />
+            <h4>Primary Health Care</h4>
+            <p>
+              <span class="chooseSpan">
+                Expand primary health care access for vulnerable groups.
+            </p>
+          </div>
+          <div class="chooseCard chooseCard-5" data-aos="fade-up" data-aos-duration="1000">
+            <img src="./aseets/imgs/choose-5.png" width="80" height="80" />
+            <h4>Environmental Awareness</h4>
+            <p>
+              <span class="chooseSpan">
+                Promote environmental awareness and advocacy through various initiatives.
+            </p>
+          </div>
+          <img src="./aseets/imgs/choose-img.png" class="chooseImg" data-aos="fade-up" data-aos-duration="1000" />
+          <div class="chooseCard chooseCard-6" data-aos="fade-down" data-aos-duration="1000">
+            <img src="./aseets/imgs/choose-6.png" width="80" height="80" />
+            <h4>Local Capacity Building</h4>
+            <p>
+              <span class="chooseSpan">
+                Enhance the management and service delivery skills of local organizations.
+            </p>
+          </div>
+        </div>
+      </div>
+      <br><br><br><br>
+
+      <!-- galery section -->
+      <div class="gallery swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="./aseets/imgs/acshr-(1).jpg"
+              class="galeryImg" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./aseets/imgs/shelter-(1).jpg"
+              class="galeryImg" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./aseets/imgs/acshr-(2).jpg"
+              class="galeryImg" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./aseets/imgs/shelter-(2).jpg"
+              class="galeryImg" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./aseets/imgs/acshr-(3).jpg"
+              class="galeryImg" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./aseets/imgs/shelter-(3).jpg"
+              class="galeryImg" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./aseets/imgs/acshr-(4).jpg"
+              class="galeryImg" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./aseets/imgs/shelter-(4).jpg"
+              class="galeryImg" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./aseets/imgs/acshr-(5).jpg"
+              class="galeryImg" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./aseets/imgs/shelter-(5).jpg"
+              class="galeryImg" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./aseets/imgs/acshr-(6).jpg"
+              class="galeryImg" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./aseets/imgs/shelter-(6).jpg"
+              class="galeryImg" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./aseets/imgs/acshr-(7).jpg"
+              class="galeryImg" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./aseets/imgs/shelter-(7).jpg"
+              class="galeryImg" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./aseets/imgs/acshr-(8).jpg"
+              class="galeryImg" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./aseets/imgs/shelter-(8).jpg"
+              class="galeryImg" />
+          </div>
+          
+        </div>
+        <script>
+          var swiper = new Swiper(".gallery", {
+            slidesPerView: 6,
+            spaceBetween: 5,
+            loop: true,
+            centeredSlides: true,
+            autoplay: {
+              delay: 1000,
+              disableOnInteraction: false,
+            },
+            breakpoints: {
+              280: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+              },
+              340: {
+                slidesPerView: 2,
+                spaceBetween: 0,
+              },
+              440: {
+                slidesPerView: 2,
+                spaceBetween: 0,
+              },
+              540: {
+                slidesPerView: 3,
+                spaceBetween: 0,
+              },
+              640: {
+                slidesPerView: 3,
+                spaceBetween: 0,
+              },
+              768: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+              },
+              1024: {
+                slidesPerView: 7,
+                spaceBetween: 50,
+              },
+            },
+          });
+        </script>
+      </div>
+
+      <!-- footer -->
+      <div class="footer">
+        <div class="footerAbout" data-aos="fade-up">
+          <img src="/aseets/contact img/web-icon.png" class="footerLogo" width="100" height="100" />
+          <p>
+            ACSHR strives to ultimately see a stable and economical strong Pakistani society living in harmony, peace,
+            good governance, rule of law, human rights and sustainable resource management.
+          </p>
+          <div class="links">
+            <a href="Javascript:void(0)" >
+              <img src="./aseets/icons/navIcons-(1).png" width="30" height="30"
+                class="footerLink blackGlow google" /></a>
+
+            <a href="Javascript:void(0)" >
+              <img src="./aseets/icons/navIcons-(3).png" width="30" height="30"
+                class="footerLink blackGlow linkedin" /></a>
+
+            <a href="https://www.facebook.com/p/Acshr-PAKISTAN-100083460453968/?locale=en_GB" target="_blank">
+              <img src="./aseets/icons/navIcons-(4).png" width="30" height="30"
+                class="footerLink blackGlow facebook" /></a>
+
+            <a href="Javascript:void(0)" >
+              <img src="./aseets/icons/navIcons-(5).png" width="30" height="30"
+                class="footerLink blackGlow tiktok" /></a>
+          </div>
+        </div>
+        <div class="footerLinks" data-aos="fade-down">
+          <h2>About Links</h2>
+          <div>
+            <p>
+              <span><img src="./aseets/icons/footerIcons-(3).png" width="30" height="30" /></span>
+            </p>
+            <p>Sachal Goth Residency<span>District East Karachi, Sindh, Pakistan
+              </span></p>
+          </div>
+          <div>
+            <p>
+              <span><img src="./aseets/icons/footerIcons-(2).png" width="30" height="30" /></span>
+            </p>
+            <p>Get Touch with<span> +92-332-878 6028 </span><span> +92-300-257 5133 </span> </p>
+          </div>
+          <div>
+            <p>
+              <span><img src="./aseets/icons/footerIcons-(1).png" width="30" height="30" /></span>
+            </p>
+            <p>Get Recent Update<span>www.acshr.org.pk</span></p>
+          </div>
+        </div>
+        <div class="footerImgs" data-aos="fade-up">
+          <h2>Location</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14469.6345469691!2d67.11321412211105!3d24.952207965937735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb3388318252ead%3A0x3b6d94b040b4b7ed!2sSachal%20Goth%20Gulzar%20E%20Hijri%20Scheme%2033%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1715377034451!5m2!1sen!2s"></iframe>
+        </div>
+      </div>
+      <div class="footerEnd">
+        <hr />
+        <br />
+        <p>
+          © <span class="year">2025</span> ACSHR. All Rights Reserved.
+        </p>
+        <br />
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script type="module" src="app.js"></script>
+  <script type="module" src="fetchApi.js"></script>
+</body>
+
+</html>

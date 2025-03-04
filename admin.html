@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ACSHR | Admin Portal</title>
+  <link rel="shortcut icon" href="../aseets/contact img/web-icon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconify/iconify@latest/dist/iconify.min.js" />
+  <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+  <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+  <script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/toastify-js"
+></script>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  <link rel="stylesheet" href="index.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+  <style>
+    .gallery {
+      width: 100%;
+    }
+    .galeryImg {
+      width: 100px;
+      height: 100px;
+    }
+    .profileSwiperSlide h2{
+      color: var(--white);
+    }
+    .profileSwiperImg {
+      width: 300px;
+      height: 300px;
+    }
+    .galleryWapper {
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+    }
+    a {
+      color: var(--white) !important;
+    }
+    .tableHeading {
+      background: #92c42d !important;
+    }
+    tr {
+      display: table-row !important;
+      justify-content: center !important;
+      align-items: center !important;
+    }
+    td,
+    th {
+      font-family: title;
+      font-size: 15px;
+    }
+    th {
+      background: var(--lightGreen) !important;
+      color: var(--white) !important;
+    }
+    .trBtn {
+      width: 80px;
+      border: none;
+      outline: none;
+      color: var(--white);
+      background: var(--darkGreen);
+      border-radius: 5px;
+    }
+    .trBtn:active {
+      transform: scale(0.9);
+    }
+    @media (max-width: 650px) {
+      td,
+      th {
+        font-size: 12px;
+      }
+    }
+  </style>
+  <body>
+    <div class="mainContainer">
+      <div class="subContainer">
+       <!-- for fixed width layout -->
+        <nav id="navbar">
+        <div class="logo" data-aos="fade-up" data-aos-duration="1000">
+          <img src="/aseets/contact img/ASCHR-logo.png" class="logoImg glow" />
+        </div>
+        <div class="links">
+          <div class="donate" onclick="window.location.replace('./contact/contact.html#donate')" data-aos="fade-up" data-aos-duration="1000">Donate Now</div>
+          <img src="./aseets/icons/navIcons-(1).png" data-aos="fade-right" data-aos-duration="4000" 
+            class="navLink glow" onclick="let gUrl=`https:www.facebook.com/profile.php?id=100083460453968&sk=followers`;window.location.replace(gUrl)" />
+          <img src="./aseets/icons/navIcons-(4).png" data-aos="fade-right" data-aos-duration="2000"
+            class="navLink glow" onclick="let fbUrl=`https:www.facebook.com/profile.php?id=100083460453968`;window.location.replace(fbUrl)"/>
+
+          <img src="./aseets/icons/bar.png" class="bar glow" id="bar" />
+        </div>
+        <div class="overLay">
+          <div class="subOverlay">
+            <img src="./aseets/icons/cross.png" id="cross" class="glow" />
+            <ul type="none" class="overlayUl">
+              <li>
+                <img src="./aseets/icons/li.png" width="15" height="15" /><a href="/index.html">
+                  Home</a>
+              </li>
+              <li>
+                <img src="./aseets/icons/li.png" width="15" height="15" /><a href="./about/index.html">
+                  About</a>
+              </li>
+              <li>
+                <img src="./aseets/icons/li.png" width="15" height="15" /><a href="./gallery/gal.html">
+                  Gallery</a>
+              </li>
+              <li>
+                <img src="./aseets/icons/li.png" width="15" height="15" /><a href="./contact/contact.html">
+                  Contact</a>
+              </li>
+              <li>
+                <img src="./aseets/icons/li.png" width="15" height="15" /><a href="./login/login.html">
+                  SignUp</a>
+              </li>
+            </ul>
+            <img src="./aseets/icons/ver-line.png" class="overlayImg1" height="400" width="50" />
+            <img src="./aseets/icons/hor-line.png" class="overlayImg2" />
+            <div class="overlayDiv">
+              <img src="/aseets/contact img/web-icon.png" width="150" height="150" class="overlayLogo" />
+              <h2>Our Promise</h2>
+              <p>
+                The Alliance of the Civil Society for Human Rights (ACSHR), founded in February 2010 in Karachi, is a
+                national NGO formed by local Pakistani intellectuals and community members. ACSHR supports vulnerable
+                communities in urban and rural Pakistan by providing sustainable livelihood opportunities, education,
+                primary health care, and employment. Registered with the Sub-registrar of Gulshan Iqbal Town, Karachi,
+                ACSHR focuses on sustainable, community-based programs that align with national and international
+                strategies.
+              </p>
+            </div>
+          </div>
+        </div>
+        </nav>
+
+        <!-- header -->
+        <div class="swiper profileSwiper">
+          <div class="swiper-wrapper profileSwiperWrapper">
+            <!-- first slider -->
+            <div class="swiper-slide profileSwiperSlide">
+              <h2 data-aos="fade-down">Admin Portal</h2>
+              <p data-aos="fade-up">
+                "This is your central hub to manage all user interactions on our
+                ACSHR website. View and oversee the details of users who
+                have signed up or logged in. Keep track of user activities,
+                manage profiles, and ensure smooth operations. Your role is
+                crucial in maintaining a seamless and efficient experience for
+                everyone visiting our platform."
+              </p>
+            </div>
+          </div>
+          <!-- Swiper JS -->
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+          <!-- Initialize Swiper -->
+          <script>
+            var swiper = new Swiper(".mySwiper", {
+              spaceBetween: 30,
+              effect: "fade",
+              loop: true,
+              centeredSlides: true,
+              autoplay: {
+                delay: 5300,
+                disableOnInteraction: false,
+              },
+            });
+          </script>
+        </div>
+        <br><br>
+        <!-- galery section -->
+        <div class="gallery swiper mySwiper" data-aos="fade-up">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./aseets/imgs/gal-(1).png" class="galeryImg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./aseets/imgs/gal-(2).png" class="galeryImg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./aseets/imgs/gal-(3).png" class="galeryImg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./aseets/imgs/gal-(4).png" class="galeryImg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./aseets/imgs/gal-(5).png" class="galeryImg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./aseets/imgs/gal-(6).png" class="galeryImg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./aseets/imgs/gal-(7).png" class="galeryImg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./aseets/imgs/gal-(8).png" class="galeryImg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./aseets/imgs/gal-(9).png" class="galeryImg" />
+            </div>
+          </div>
+          <script>
+            var swiper = new Swiper(".gallery", {
+              slidesPerView: 6,
+              spaceBetween: 5,
+              loop: true,
+              centeredSlides: true,
+              autoplay: {
+                delay: 500,
+                disableOnInteraction: false,
+              },
+              speed: 1500,
+              breakpoints: {
+                280: {
+                  slidesPerView: 2,
+                  spaceBetween: 0,
+                },
+                340: {
+                  slidesPerView: 2,
+                  spaceBetween: 0,
+                },
+                440: {
+                  slidesPerView: 2,
+                  spaceBetween: 0,
+                },
+                540: {
+                  slidesPerView: 3,
+                  spaceBetween: 0,
+                },
+                640: {
+                  slidesPerView: 3,
+                  spaceBetween: 0,
+                },
+                768: {
+                  slidesPerView: 4,
+                  spaceBetween: 40,
+                },
+                1024: {
+                  slidesPerView: 7,
+                  spaceBetween: 50,
+                },
+              },
+            });
+          </script>
+        </div><br><br>
+
+        <!-- user Table -->
+        <table class="table table-striped" style="text-align: center">
+          <thead>
+            <tr class="tableHeading">
+              <th scope="col" class="SNo.">S No.</th>
+              <th scope="col" class="Name">Name</th>
+              <th scope="col" class="Email">Email</th>
+              <th scope="col" class="Contact">Contact</th>
+              <th scope="col" class="TimeStamp">TimeStamp</th>
+              <th scope="col" class="User-Admin fw-bold">User/Admin</th>
+              <th scope="col" class="Status">Status</th>
+              <th scope="col" class="Action">Action</th>
+            </tr>
+          </thead>
+          <tbody id="userTableBody"></tbody>
+        </table>
+
+        <!-- Edit Modal -->
+        <!-- Button trigger modal -->
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="staticBackdrop"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header" style="background: #92c42d">
+                <h1
+                  class="modal-title fs-5 fw-bold"
+                  style="font-family: title; color: var(--white)"
+                  id="staticBackdropLabel"
+                >
+                  Modal title
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form id="editForm">
+                  <div class="mb-3">
+                    <label
+                      for="editName"
+                      class="col-form-label"
+                      style="font-family: title; color: var(--darkGreen)"
+                      >Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      style="font-family: title; color: var(--darkGreen)"
+                      id="editName"
+                      placeholder="Change Your Name"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label
+                      for="editEmail"
+                      class="col-form-label"
+                      style="font-family: title; color: var(--darkGreen)"
+                      >Email</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      style="font-family: title; color: var(--darkGreen)"
+                      id="editEmail"
+                      placeholder="Change Your Email"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label
+                      for="editContact"
+                      class="col-form-label"
+                      style="font-family: title; color: var(--darkGreen)"
+                      >Contact</label
+                    >
+                    <input
+                      type="text"
+                      maxlength="11"
+                      class="form-control"
+                      style="font-family: title; color: var(--darkGreen)"
+                      id="editContact"
+                      placeholder="Change Your Conatct"
+                    />
+                  </div>
+                  <button type="submit" class="trBtn">Done</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer">
+          <div class="footerAbout" data-aos="fade-up">
+            <img src="./aseets/web-icon.png" class="footerLogo" width="100" height="100" />
+            <p>
+              ACSHR strives to ultimately see a stable and economical strong Pakistani society living in harmony, peace,
+              good governance, rule of law, human rights and sustainable resource management.
+            </p>
+            <div class="links">
+              <a href="Javascript:void(0)">
+                <img src="./aseets/icons/navIcons-(1).png" width="30" height="30"
+                  class="footerLink blackGlow google" /></a>
+
+              <a href="Javascript:void(0)">
+                <img src="./aseets/icons/navIcons-(3).png" width="30" height="30"
+                  class="footerLink blackGlow linkedin" /></a>
+
+              <a href="https://www.facebook.com/p/Acshr-PAKISTAN-100083460453968/?locale=en_GB" target="_blank">
+                <img src="./aseets/icons/navIcons-(4).png" width="30" height="30"
+                  class="footerLink blackGlow facebook" /></a>
+
+              <a href="Javascript:void(0)">
+                <img src="./aseets/icons/navIcons-(5).png" width="30" height="30"
+                  class="footerLink blackGlow tiktok" /></a>
+            </div>
+          </div>
+          <div class="footerLinks" data-aos="fade-down">
+            <h2>About Links</h2>
+            <div>
+              <p>
+                <span><img src="../aseets/icons/footerIcons-(3).png" width="30" height="30" /></span>
+              </p>
+              <p>Sachal Goth Residency<span>District East Karachi, Sindh, Pakistan
+                </span></p>
+            </div>
+            <div>
+              <p>
+                <span><img src="../aseets/icons/footerIcons-(2).png" width="30" height="30" /></span>
+              </p>
+              <p>Get Touch with<span> +92-332-878 6028 </span><span> +92-300-257 5133 </span> </p>
+            </div>
+            <div>
+              <p>
+                <span><img src="../aseets/icons/footerIcons-(1).png" width="30" height="30" /></span>
+              </p>
+              <p>Get Recent Update<span>www.acshr.org.pk</span></p>
+            </div>
+          </div>
+          <div class="footerImgs" data-aos="fade-up">
+            <h2>Location</h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14469.6345469691!2d67.11321412211105!3d24.952207965937735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb3388318252ead%3A0x3b6d94b040b4b7ed!2sSachal%20Goth%20Gulzar%20E%20Hijri%20Scheme%2033%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1715377034451!5m2!1sen!2s"></iframe>
+          </div>
+        </div>
+        <div class="footerEnd">
+          <hr />
+          <br />
+          <p>
+            © <span class="year">2025</span> ACSHR. All Rights Reserved.
+          </p>
+          <br />
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script type="module" src="admin.js"></script>
+  </body>
+</html>
