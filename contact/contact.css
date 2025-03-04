@@ -16,9 +16,11 @@
 body {
   margin: 0 auto !important;
 }
-a{
+
+a {
   color: var(--white);
 }
+
 /********* scrollbar css ************/
 ::-webkit-scrollbar {
   width: 6px !important;
@@ -978,25 +980,30 @@ body {
 
 
 .bankheading {
-  width: 300px !important;
-  height: 100px !important;
+  width: 100% !important;
+  height: 60px !important;
   padding: 10px !important;
+  color: #0C860D !important;
+  font-family: title !important;
   border-top: 1px dashed #0c860d !important;
   border-bottom: 1px dashed #0c860d !important;
 }
 
 .banktextpara {
+  text-align: center !important;
   width: 300px !important;
-  height: 240px !important;
+  height: 140px !important;
 }
 
 .card {
   border: 2px solid #0000004b !important;
-  width: 300px !important;
-  height: 660px !important;
-  overflow: hidden !important;box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px !important;
+  /* width:  300px !important;
+  height: 660px !important; */
+  overflow: hidden !important;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px !important;
 }
-.donate{
+
+.donate {
   width: 150px;
   height: 30px;
   display: flex;
@@ -1005,14 +1012,16 @@ body {
   border-radius: 13px;
   color: var(--darkGreen);
   cursor: pointer;
-  border: 1px dashed var(--lightGreen);
+  border: 1px solid var(--darkGreen);
   background: #ffffffb2;
   transition: all ease 0.2s;
-  filter: drop-shadow(1px 1px 1px #00000080);
+  filter: drop-shadow(1px 1px 1px #ffffff);
 }
-.donate:active{
+
+.donate:active {
   transform: scale(0.9);
 }
+
 /* gallery section css */
 .topGallery {
   margin-top: 30px;
@@ -1026,6 +1035,7 @@ body {
   width: 100px;
   height: 100px;
 }
+
 /* ---------------------------------------- */
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx media query xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx media query xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
@@ -1221,7 +1231,14 @@ body {
   }
 }
 
-@media (max-width: 660px) {}
+@media (max-width: 660px) {
+
+  .satisfy .text h3 {
+    padding: 0;
+    line-height: 1.5em;
+  }
+
+}
 
 @media (max-width: 550px) {
 
@@ -1247,6 +1264,16 @@ body {
   .satisfy .text,
   .satisfy .img {
     padding: 0em;
+  }
+
+  .satisfy .img .roundName {
+    width: 140px !important;
+    height: 140px !important;
+  }
+
+  .satisfy .img .standIcon {
+    width: 250px !important;
+    height: 250px !important;
   }
 }
 

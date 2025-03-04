@@ -3,12 +3,13 @@ AOS.init({
   duration: 1500,
   delay: 0,
 });
+
 document.addEventListener("DOMContentLoaded", () => {
   // ------------------ 1. Navbar ------------------
   window.addEventListener("scroll", () => {
     const container = document.getElementById("navbar");
     let scrollY = window.scrollY;
-    let triggredHeight = 100;
+    let triggredHeight = -5;
 
     if (scrollY > triggredHeight) {
       container.classList.add("changeColor");
@@ -16,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
       container.classList.remove("changeColor");
     }
   });
+
   // ------------------ 2. Navbar overLay------------------
   const overLay = document.querySelector(".overLay");
   const cross = document.getElementById("cross");
@@ -60,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .querySelectorAll(".year")
     .forEach((ele) => (ele.textContent = getYear));
 
-  
+
 
   function initializeTooltips() {
     const classes = document.querySelectorAll(
@@ -70,12 +72,12 @@ document.addEventListener("DOMContentLoaded", () => {
       const classContent = cls.classList.contains("google")
         ? "Google"
         : cls.classList.contains("linkedin")
-        ? "Linkedin"
-        : cls.classList.contains("facebook")
-        ? "Facebook"
-        : cls.classList.contains("tiktok")
-        ? "Twitter"
-        : "";
+          ? "Linkedin"
+          : cls.classList.contains("facebook")
+            ? "Facebook"
+            : cls.classList.contains("tiktok")
+              ? "Twitter"
+              : "";
       tippy(cls, {
         content: classContent,
         theme: "light",

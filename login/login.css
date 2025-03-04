@@ -60,11 +60,11 @@
 }
 
 .subContainer {
+
   max-width: 1550px;
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(https://scontent.fkhi17-2.fna.fbcdn.net/v/t39.30808-6/472423780_582599911154726_6642479988759453986_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGcFBol1-MgQaGSZ7z27YRg37Yak_CysrnfthqT8LKyuZbP9SuwL_5Chr7mPgEh84zw10Irt4-Al4nJzpNjZwIk&_nc_ohc=FF3e6urxemMQ7kNvgGqkDQg&_nc_oc=AdhR7WjvU7ris7LuoP_Ifea2Y5Re5JEV6MC6TBzupblpELLCIDynhQ8M00Ijr4SIDrc&_nc_zt=23&_nc_ht=scontent.fkhi17-2.fna&_nc_gid=A9KoPOZUsIhLXdGLS1xLvNj&oh=00_AYABXQhAWaWEJOUC9aOnbmKkP3mp8kRcUg5jdNTIoQNEfQ&oe=67C023FC)
-      no-repeat;
+    url(../gallery/aseets/imgs/galBackground.png) no-repeat;
   background-position: center;
   background-size: cover;
   margin: 0 auto;
@@ -96,8 +96,7 @@
   justify-content: center;
   align-items: flex-start;
   padding: 20px;
-  background: url(https://scontent.fkhi17-2.fna.fbcdn.net/v/t39.30808-6/472770340_582599934488057_7646593153449659738_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHRLVfTol9_a9VSgb8qoGoETe5EfiYGEY9N7kR-JgYRjwYEjNO7zatlVYwltJLspEUTpilQ33bQSx-ZHecWTJ_9&_nc_ohc=hDI6jddBBgoQ7kNvgHTUola&_nc_oc=Adhf7WAxAyFMWEAjusazdWKPItAfpvbTuLhkQnEFInQbgBzS8rE_yX4f1Z6YLFL1nP4&_nc_zt=23&_nc_ht=scontent.fkhi17-2.fna&_nc_gid=ABgDygVFIhvqwJjBRDjNLUK&oh=00_AYDeQOLqs16kS9ng4PRzV21qlVjd8geDgyWU9nUeMPFcFg&oe=67C01C51)
-    no-repeat;
+  background: url(../aseets/imgs/acshr-\(18\).jpg) no-repeat;
   background-position: center center;
   background-size: cover;
   border-radius: 12px;
@@ -314,11 +313,9 @@ button[type="submit"]:active,
   }
 }
 
-@media (max-width: 1150px) {
-}
+@media (max-width: 1150px) {}
 
-@media (max-width: 1080px) {
-}
+@media (max-width: 1080px) {}
 
 @media (max-width: 950px) {
   #navbar .navLink {
@@ -415,8 +412,7 @@ button[type="submit"]:active,
   }
 }
 
-@media (max-width: 660px) {
-}
+@media (max-width: 660px) {}
 
 @media (max-width: 550px) {
   .loginBox {
@@ -429,6 +425,7 @@ button[type="submit"]:active,
 }
 
 @media (max-width: 425px) {
+
   .loginBox .form h2,
   #signUp-form h2,
   #forgetPasswordForm h2 {

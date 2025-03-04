@@ -26,6 +26,7 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555 !important;
 }
+
 /* ************************************** */
 @font-face {
   font-family: heading;
@@ -81,6 +82,7 @@
   display: flex;
   justify-content: center;
   gap: 10px;
+  padding: 5px;
   align-items: center;
 }
 
@@ -90,8 +92,8 @@
 }
 
 #navbar .logoImg {
-  width: 100px;
-  height: 75px;
+  width:  120px;
+  height: 80px;
 }
 
 #navbar .navLink {
@@ -126,8 +128,9 @@
   color: var(--darkGreen);
 }
 
+
 .changeColor {
-  background: #61624750;
+  background: #34313149;
   backdrop-filter: blur(10px);
 }
 
@@ -243,8 +246,7 @@
   flex-direction: column;
   gap: 20px;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(https://images.squarespace-cdn.com/content/v1/65031b0695c89d2e9da2fb63/cc83baa3-10f2-4aa1-a264-b4a95e2cb56c/feta_dip_appetizers_drinks.jpg)
-      no-repeat;
+    url(https://images.squarespace-cdn.com/content/v1/65031b0695c89d2e9da2fb63/cc83baa3-10f2-4aa1-a264-b4a95e2cb56c/feta_dip_appetizers_drinks.jpg) no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -311,16 +313,14 @@
   height: 100%;
   position: absolute;
   top: -2em;
-  clip-path: polygon(
-    13% 0,
-    86% 0,
-    100% 100%,
-    100% 100%,
-    80% 100%,
-    20% 100%,
-    0 100%,
-    0 100%
-  );
+  clip-path: polygon(13% 0,
+      86% 0,
+      100% 100%,
+      100% 100%,
+      80% 100%,
+      20% 100%,
+      0 100%,
+      0 100%);
   background: var(--white);
 }
 
@@ -487,8 +487,7 @@
   border-radius: 5px;
   transition: all ease 0.5s;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(https://simply-delicious-food.com/wp-content/uploads/2019/05/lemon-herb-grilled-chicken-breast-3.jpg)
-      no-repeat;
+    url(https://simply-delicious-food.com/wp-content/uploads/2019/05/lemon-herb-grilled-chicken-breast-3.jpg) no-repeat;
   background-position: left center;
   background-size: cover;
 }
@@ -595,9 +594,11 @@
   justify-content: center;
   align-items: center;
 }
-h2{
+
+h2 {
   text-shadow: 1px 1px 1px #000 !important;
 }
+
 /* footer css Section */
 .footer {
   width: 100%;
@@ -836,16 +837,14 @@ h2{
   height: 410px;
   background: yellowgreen;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(./aseets/imgs/acshr-\(1\).jpg)
-      no-repeat;
+    url(./aseets/imgs/acshr-\(1\).jpg) no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .col-3 {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(./aseets/imgs/shelter-\(13\).jpg)
-      no-repeat;
+    url(./aseets/imgs/shelter-\(13\).jpg) no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -856,16 +855,14 @@ h2{
   height: 200px;
   background: yellow;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(./aseets/imgs/acshr-\(2\).jpg)
-      no-repeat;
+    url(./aseets/imgs/acshr-\(2\).jpg) no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .col-5 {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(./aseets/imgs/acshr-\(3\).jpg)
-      no-repeat;
+    url(./aseets/imgs/acshr-\(3\).jpg) no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -877,8 +874,7 @@ h2{
   background: green;
   right: 0.5em;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(./aseets/imgs/shelter-\(2\).jpg)
-      no-repeat;
+    url(./aseets/imgs/shelter-\(2\).jpg) no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -886,8 +882,7 @@ h2{
 .col-4-1 {
   top: 15em;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(./aseets/imgs/shelter-\(3\).jpg)
-      no-repeat;
+    url(./aseets/imgs/shelter-\(3\).jpg) no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -906,8 +901,7 @@ h2{
   left: 15.8em;
   background: red;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(./aseets/imgs/usAid-\(6\).jpg)
-      no-repeat;
+    url(./aseets/imgs/usAid-\(6\).jpg) no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -920,8 +914,7 @@ h2{
   left: 48.7em;
   background: blue;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(./aseets/imgs/usAid-\(4\).jpg)
-      no-repeat;
+    url(./aseets/imgs/usAid-\(4\).jpg) no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -934,8 +927,7 @@ h2{
   top: 2em;
   left: 0.6em;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(./aseets/imgs/usAid-\(9\).jpg)
-      no-repeat;
+    url(./aseets/imgs/usAid-\(9\).jpg) no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -948,8 +940,7 @@ h2{
   top: 44em;
   left: 15.8em;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(./aseets/imgs/acshr-\(5\).jpg)
-      no-repeat;
+    url(./aseets/imgs/acshr-\(5\).jpg) no-repeat;
   background-position: center center;
   background-size: cover;
 }
@@ -962,8 +953,7 @@ h2{
   top: 44em;
   left: 30em;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(./aseets/imgs/acshr-\(12\).jpg)
-      no-repeat;
+    url(./aseets/imgs/acshr-\(12\).jpg) no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -976,8 +966,7 @@ h2{
   top: 40em;
   left: 0.6em;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(./aseets/imgs/shelter-\(17\).jpg)
-      no-repeat;
+    url(./aseets/imgs/shelter-\(17\).jpg) no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -990,8 +979,7 @@ h2{
   top: 28em;
   left: 64.6em;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(./aseets/imgs/shelter-\(16\).jpg)
-      no-repeat;
+    url(./aseets/imgs/shelter-\(16\).jpg) no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -1004,8 +992,7 @@ h2{
   top: 37.7em;
   left: 64.6em;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(./aseets/imgs/acshr-\(15\).jpg)
-      no-repeat;
+    url(./aseets/imgs/acshr-\(15\).jpg) no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -1018,8 +1005,7 @@ h2{
   top: 28em;
   right: 0.5em;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(./aseets/imgs/usAid-\(16\).jpg)
-      no-repeat;
+    url(./aseets/imgs/usAid-\(16\).jpg) no-repeat;
   background-position: center left;
   background-size: cover;
 }
@@ -1032,7 +1018,7 @@ h2{
   background-color: var(--darkGreen) !important;
 }
 
-.tippy-box[data-theme~="light"][data-placement^="top"] > .tippy-arrow::before {
+.tippy-box[data-theme~="light"][data-placement^="top"]>.tippy-arrow::before {
   border-top-color: #f0f0f0 !important;
 }
 
@@ -1051,7 +1037,8 @@ h2{
 .toastify-center img {
   filter: drop-shadow(0px 0px 5px #00000080);
 }
-.donate{
+
+.donate {
   width: 150px;
   height: 30px;
   display: flex;
@@ -1060,20 +1047,23 @@ h2{
   border-radius: 13px;
   color: var(--darkGreen);
   cursor: pointer;
-  border: 1px dashed var(--lightGreen);
+  border: 1px solid var(--darkGreen);
   background: #ffffffb2;
   transition: all ease 0.2s;
-  filter: drop-shadow(1px 1px 1px #00000080);
+  filter: drop-shadow(1px 1px 1px #ffffff);
 }
-.donate:active{
+
+.donate:active {
   transform: scale(0.9);
 }
+
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 @media (max-width: 1536px) {
+
   .col-8,
   .col-10 {
     width: 200px;
@@ -1143,6 +1133,7 @@ h2{
 }
 
 @media (max-width: 1160px) {
+
   .TimeStamp,
   .Action,
   .Status {
@@ -1151,6 +1142,7 @@ h2{
 }
 
 @media (max-width: 1024px) {
+
   .discover .heading,
   .discover .text {
     width: 100%;

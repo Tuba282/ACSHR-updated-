@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -9,18 +10,22 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
 @font-face {
   font-family: heading;
   src: url(./aseets/fonts/BroncoPersonalUse.ttf);
 }
+
 @font-face {
   font-family: rough;
   src: url(./aseets/fonts/RougeScript-Regular.ttf);
 }
+
 @font-face {
   font-family: title;
   src: url(./aseets/fonts/Kodchasan-Regular.ttf);
 }
+
 :root {
   --black: #000;
   --secondary: #333;
@@ -28,15 +33,18 @@
   --lightGreen: #92c42d;
   --white: #fff;
 }
+
 .mainContainer {
   max-width: 1920px;
   margin: 0 auto;
 }
+
 .subContainer {
   max-width: 1550px;
   min-height: 100vh;
   margin: 0 auto;
 }
+
 #navbar {
   width: 100%;
   height: 90px;
@@ -51,6 +59,7 @@
   box-sizing: border-box;
   z-index: 1000;
 }
+
 #navbar .logo,
 #navbar .links {
   display: flex;
@@ -58,21 +67,26 @@
   gap: 10px;
   align-items: center;
 }
+
 #navbar .bar {
   width: 30px;
   height: 30px;
 }
+
 #navbar .logoImg {
   width: 100px;
   height: 75px;
 }
+
 #navbar .navLink {
   width: 30px;
   height: 30px;
 }
+
 #navbar .navLink:hover {
   transform: scale(1.2);
 }
+
 #navbar .navBtn {
   color: var(--white);
   border: 4px double var(--lightGreen);
@@ -82,13 +96,16 @@
   border-radius: 2px;
   transition: all ease 0.7s;
 }
+
 #navbar .navBtn:hover {
   background-color: var(--lightGreen);
   border: 4px double var(--darkGreen);
 }
+
 #navbar .navBtn:hover p {
   color: var(--darkGreen);
 }
+
 #navbar .navBtn p {
   color: var(--lightGreen);
 }
@@ -97,6 +114,7 @@
   background: #61624750;
   backdrop-filter: blur(10px);
 }
+
 .overLay {
   width: 100%;
   height: 100vh;
@@ -109,9 +127,11 @@
   align-items: center;
   background: rgba(49, 49, 48, 0.899);
 }
+
 .glow {
   filter: drop-shadow(0px 2px 10px #ffffff);
 }
+
 #cross {
   width: 35px;
   height: 35px;
@@ -120,12 +140,15 @@
   left: 4.8em;
   z-index: 1000;
 }
+
 .overLay {
   display: none;
 }
+
 .show {
   display: flex;
 }
+
 .subOverlay {
   width: 80%;
   height: 80%;
@@ -134,18 +157,21 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .subOverlay .overlayDiv {
   overflow: hidden;
   width: 50%;
   display: grid;
   gap: 20px;
 }
+
 .overlayDiv h2 {
   font-size: 50px;
   font-family: heading;
   letter-spacing: 0.2em;
   font-weight: lighter;
 }
+
 .overlayDiv h2:hover,
 .overlayDiv p:hover {
   color: var(--lightGreen);
@@ -154,12 +180,14 @@
 .overlayDiv p {
   font-weight: 300;
 }
+
 .subOverlay .overlayUl {
   width: 30%;
   display: grid;
   gap: 20px;
   font-size: 25px;
 }
+
 .overlayUl li {
   padding: 0px 2em;
   display: flex;
@@ -171,19 +199,24 @@
   align-items: center;
   transition: all ease 0.5s;
 }
+
 .overlayUl li a {
   text-decoration: none;
 }
+
 .overlayUl li:hover {
   padding: 0px 3em;
   border-right: 4px solid var(--lightGreen);
 }
+
 .overlayImg2 {
   display: none;
 }
+
 h2 {
   text-shadow: 1px 1px 1px #000000 !important;
 }
+
 /* header section css */
 .header {
   width: 100%;
@@ -195,8 +228,7 @@ h2 {
   flex-direction: column;
   gap: 20px;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../aseets/imgs/acshr-\(10\).jpg)
-      no-repeat;
+    url(../aseets/imgs/acshr-\(10\).jpg) no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -206,12 +238,14 @@ h2 {
   color: var(--white);
   font-family: heading;
 }
+
 .header p {
   width: 700px;
   line-height: 1.5em;
   text-align: center;
   font-weight: 200;
 }
+
 /*mainGallery section css */
 .mainGallery {
   width: 100%;
@@ -226,6 +260,7 @@ h2 {
   background-position: center;
   background-size: cover;
 }
+
 .mainContainer .pictCard {
   width: 280px;
   height: 350px;
@@ -240,10 +275,12 @@ h2 {
   transition: all ease 0.5s;
   border-radius: 2px;
 }
+
 .mainContainer .pictCard:hover {
   transform: rotate(0deg) scale(1.3);
   z-index: 1;
 }
+
 .mainContainer .pictCard .img {
   width: 100%;
   height: 85%;
@@ -251,6 +288,7 @@ h2 {
   background: #000;
   border-radius: 2px;
 }
+
 .mainContainer .pictCard .title {
   width: 100%;
   margin-top: 5px;
@@ -266,10 +304,12 @@ h2 {
   color: var(--lightGreen);
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
 }
+
 .odd {
   transform: rotate(7deg);
   box-shadow: -2px -2px 5px 5px rgba(70, 69, 69, 0.342);
 }
+
 .even {
   box-shadow: 2px 2px 5px 5px rgba(70, 69, 69, 0.342);
   transform: rotate(-7deg);
@@ -287,6 +327,7 @@ h2 {
   border-radius: 2px;
   z-index: -1;
 }
+
 /* footer css Section */
 .footer {
   width: 100%;
@@ -401,13 +442,16 @@ h2 {
   background: #0c860c64;
   filter: drop-shadow(1px 1px 3px #e8e4e48d);
 }
+
 .tippy-box[data-theme~="light"] {
   background-color: var(--darkGreen) !important;
 }
-.tippy-box[data-theme~="light"][data-placement^="top"] > .tippy-arrow::before {
+
+.tippy-box[data-theme~="light"][data-placement^="top"]>.tippy-arrow::before {
   border-top-color: #f0f0f0 !important;
 }
-.donate{
+
+.donate {
   width: 150px;
   height: 30px;
   display: flex;
@@ -416,14 +460,16 @@ h2 {
   border-radius: 13px;
   color: var(--darkGreen);
   cursor: pointer;
-  border: 1px dashed var(--lightGreen);
+  border: 1px solid var(--darkGreen);
   background: #ffffffb2;
   transition: all ease 0.2s;
-  filter: drop-shadow(1px 1px 1px #00000080);
+  filter: drop-shadow(1px 1px 1px #ffffff);
 }
-.donate:active{
+
+.donate:active {
   transform: scale(0.9);
 }
+
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx media query xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx media query xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx media query xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
@@ -432,30 +478,34 @@ h2 {
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx media query xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx media query xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx media query xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-@media (max-width: 1400px) {
-}
-@media (max-width: 1350px) {
-}
-@media (max-width: 1150px) {
-}
-@media (max-width: 1080px) {
-}
+@media (max-width: 1400px) {}
+
+@media (max-width: 1350px) {}
+
+@media (max-width: 1150px) {}
+
+@media (max-width: 1080px) {}
+
 @media (max-width: 950px) {
   #navbar .navLink {
     display: none;
   }
+
   #navbar {
     padding: 1em;
     justify-content: center;
   }
+
   #navbar .logo {
     width: 100%;
     justify-content: space-between;
   }
+
   .footer {
     flex-direction: column;
     justify-content: center;
   }
+
   .footer .footerAbout,
   .footer .footerImgs,
   .footer .footerLinks {
@@ -466,10 +516,12 @@ h2 {
     align-items: center;
     text-align: center;
   }
+
   .footer .footerImgs {
     display: grid;
     gap: 20px;
   }
+
   .footer .footerImgs div {
     display: flex;
     flex-wrap: wrap;
@@ -478,6 +530,7 @@ h2 {
     gap: 0px;
   }
 }
+
 @media (max-width: 850px) {
   .subOverlay {
     width: 95%;
@@ -485,6 +538,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
   }
+
   .subOverlay .overlayUl {
     width: 100%;
     display: flex;
@@ -495,6 +549,7 @@ h2 {
     gap: 20px;
     font-size: 20px;
   }
+
   .subOverlay .overlayDiv {
     width: 100%;
     display: flex;
@@ -505,11 +560,13 @@ h2 {
     gap: 20px;
     font-size: 20px;
   }
+
   .overlayImg1,
   .overlayDiv h2,
   .overlayDiv p {
     display: none;
   }
+
   .overlayImg2 {
     display: block;
     width: 80%;
@@ -517,6 +574,7 @@ h2 {
     margin: 10px 0px;
   }
 }
+
 @media (max-width: 750px) {
   .header p {
     width: 100%;
@@ -524,18 +582,20 @@ h2 {
     text-align: center;
   }
 }
-@media (max-width: 660px) {
-}
+
+@media (max-width: 660px) {}
+
 @media (max-width: 550px) {
   .overlayLogo {
     display: none;
   }
+
   .header h2 {
     text-align: center;
     font-size: 60px;
   }
 }
-@media (max-width: 425px) {
-}
-@media (max-width: 375px) {
-}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 375px) {}
