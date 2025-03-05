@@ -1,498 +1,896 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ACSHR | Contact</title>
+    <link
+      rel="shortcut icon"
+      href="../aseets/contact img/web-icon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@iconify/iconify@latest/dist/iconify.min.js"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="contact.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ACSHR | Contact</title>
-  <link rel="shortcut icon" href="../aseets/contact img/web-icon.png" type="image/x-icon" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconify/iconify@latest/dist/iconify.min.js" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="contact.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
+  <body>
+    <div class="mainContainer">
+      <div class="subContainer">
+        <!-- for fixed width layout -->
+        <nav id="navbar">
+          <div class="logo" data-aos="fade-up" data-aos-duration="1000">
+            <img
+              src="/aseets/Alliance-updated-logo-removebg-preview.png"
+              class="logoImg glow"
+            />
+          </div>
+          <div class="links">
+            <div
+              class="donate"
+              onclick="window.location.replace('../contact/contact.html#donate')"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              Donate Now
+            </div>
+            <img
+              src="./aseets/icons/navIcons-(1).png"
+              data-aos="fade-up"
+              data-aos-duration="4000"
+              class="navLink glow"
+              onclick="let gUrl=`https:www.facebook.com/profile.php?id=100083460453968&sk=followers`;window.location.replace(gUrl)"
+            />
+            <img
+              src="./aseets/icons/navIcons-(4).png"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              class="navLink glow"
+              onclick="let fbUrl=`https:www.facebook.com/profile.php?id=100083460453968`;window.location.replace(fbUrl)"
+            />
 
-
-<body>
-  <div class="mainContainer">
-    <div class="subContainer">
-      <!-- for fixed width layout -->
-      <nav id="navbar">
-        <div class="logo" data-aos="fade-up" data-aos-duration="1000">
-          <img src="/aseets/Alliance-updated-logo-removebg-preview.png" class="logoImg glow" />
-        </div>
-        <div class="links">
-          <div class="donate" onclick="window.location.replace('../contact/contact.html#donate')" data-aos="fade-up"
-            data-aos-duration="1000">Donate Now</div>
-          <img src="./aseets/icons/navIcons-(1).png" data-aos="fade-up" data-aos-duration="4000" class="navLink glow"
-            onclick="let gUrl=`https:www.facebook.com/profile.php?id=100083460453968&sk=followers`;window.location.replace(gUrl)" />
-          <img src="./aseets/icons/navIcons-(4).png" data-aos="fade-up" data-aos-duration="2000" class="navLink glow"
-            onclick="let fbUrl=`https:www.facebook.com/profile.php?id=100083460453968`;window.location.replace(fbUrl)" />
-
-          <img src="./aseets/icons/bar.png" class="bar glow" id="bar" />
-        </div>
-        <div class="overLay">
-          <div class="subOverlay">
-            <img src="./aseets/icons/cross.png" id="cross" class="glow" />
-            <ul type="none" class="overlayUl">
-              <li>
-                <img src="../aseets/icons/li.png" width="15" height="15" /><a href="/">
-                  Home</a>
-              </li>
-              <li>
-                <img src="../aseets/icons/li.png" width="15" height="15" /><a href="../about/index.html">
-                  About</a>
-              </li>
-              <li>
-                <img src="../aseets/icons/li.png" width="15" height="15" /><a href="../gallery/gal.html">
-                  Gallery</a>
-              </li>
-              <li>
-                <img src="../aseets/icons/li.png" width="15" height="15" /><a href="../contact/contact.html">
-                  Contact</a>
-              </li>
-              <li>
-                <img src="../aseets/icons/li.png" width="15" height="15" /><a href="../login/login.html">
-                  SignUp</a>
-              </li>
-            </ul>
-            <img src="../aseets/icons/ver-line.png" class="overlayImg1" height="400" width="50" />
-            <img src="../aseets/icons/hor-line.png" class="overlayImg2" />
-            <div class="overlayDiv">
-              <img src="/aseets/contact img/web-icon.png" width="150" height="150" class="overlayLogo" />
-              <h2>Our Promise</h2>
-              <p>
-                The Alliance of the Civil Society for Human Rights (ACSHR), founded in February 2010 in Karachi, is a
-                national NGO formed by local Pakistani intellectuals and community members. ACSHR supports vulnerable
-                communities in urban and rural Pakistan by providing sustainable livelihood opportunities, education,
-                primary health care, and employment. Registered with the Sub-registrar of Gulshan Iqbal Town, Karachi,
-                ACSHR focuses on sustainable, community-based programs that align with national and international
-                strategies.
-              </p>
+            <img src="./aseets/icons/bar.png" class="bar glow" id="bar" />
+          </div>
+          <div class="overLay">
+            <div class="subOverlay">
+              <img src="./aseets/icons/cross.png" id="cross" class="glow" />
+              <ul type="none" class="overlayUl">
+                <li>
+                  <img src="../aseets/icons/li.png" width="15" height="15" /><a
+                    href="/"
+                  >
+                    Home</a
+                  >
+                </li>
+                <li>
+                  <img src="../aseets/icons/li.png" width="15" height="15" /><a
+                    href="../about/index.html"
+                  >
+                    About</a
+                  >
+                </li>
+                <li>
+                  <img src="../aseets/icons/li.png" width="15" height="15" /><a
+                    href="../gallery/gal.html"
+                  >
+                    Gallery</a
+                  >
+                </li>
+                <li>
+                  <img src="../aseets/icons/li.png" width="15" height="15" /><a
+                    href="../contact/contact.html"
+                  >
+                    Contact</a
+                  >
+                </li>
+                <li>
+                  <img src="../aseets/icons/li.png" width="15" height="15" /><a
+                    href="../login/login.html"
+                  >
+                    SignUp</a
+                  >
+                </li>
+              </ul>
+              <img
+                src="../aseets/icons/ver-line.png"
+                class="overlayImg1"
+                height="400"
+                width="50"
+              />
+              <img src="../aseets/icons/hor-line.png" class="overlayImg2" />
+              <div class="overlayDiv">
+                <img
+                  src="/aseets/contact img/web-icon.png"
+                  width="150"
+                  height="150"
+                  class="overlayLogo"
+                />
+                <h2>Our Promise</h2>
+                <p>
+                  The Alliance of the Civil Society for Human Rights (ACSHR),
+                  founded in February 2010 in Karachi, is a national NGO formed
+                  by local Pakistani intellectuals and community members. ACSHR
+                  supports vulnerable communities in urban and rural Pakistan by
+                  providing sustainable livelihood opportunities, education,
+                  primary health care, and employment. Registered with the
+                  Sub-registrar of Gulshan Iqbal Town, Karachi, ACSHR focuses on
+                  sustainable, community-based programs that align with national
+                  and international strategies.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
 
-
-      <!-- header -->
-      <div class="header ">
-        <h2 data-aos="fade-up">Contact</h2>
-        <p data-aos="fade-up">
-          "Welcome to ACSHR's Contact Page! We're delighted to connect with you and answer any inquiries you may have.
-          Whether you're seeking contact assistance, have feedback, or just want to say hello, our team is here to help.
-          Sove your queries with us ..."
-        </p>
-      </div>
-
-      <!-- discover div -->
-      <div class="discover">
-        <h2 class="heading" data-aos="fade-down">Connecting with Our Team
-        </h2>
-        <p class="text" data-aos="fade-up">
-          Thank you for reaching out to us! We deeply value your inquiry and assure you that one of our dedicated team
-          members will contact you soon. To provide you with the best service possible, you may hear from
-          representatives of Member Evolution or our parent company, Aspedia Australia. Additionally, if you're looking
-          to visit our offices or headquarters, you'll find Nordea's presence in various locations across the globe,
-          with addresses available for both our headquarters and local offices.
-        </p>
-      </div><br><br>
-
-
-      <!-- discover div -->
-      <div class="discover text-left" data-aos="fade-up">
-        <h2 class="heading" data-aos="fade-up">Head Office - Karachi </h2>
-        <p class="text" data-aos="flip-down">
-          <br><strong class="text-dark">ADDRESS: </strong> A-104/1 (Old) A-147/1 (New), Sachal Goth Residency, Near
-          PCSIR Scheme 33, District East Karachi, Sindh,
-          Pakistan.
-          <br><strong class="text-dark"> PHONE: </strong> +92-332-878 6028 | +92-300-257 5133
-          <br><strong class="text-dark"> EMAIL: </strong> <a href="mailto:acshr2021@gmail.com"
-            style="color: #0C860D;">acshr2021@gmail.com</a> / <a href="mailto:info@acshr.org.pk"
-            style="color: #0C860D;">info@acshr.org.pk</a>
-          <br><strong class="text-dark"> WEBSITE: </strong> <a href="http://www.acshr.org.pk/" target="_blank"
-            style="color: #0C860D;">
-            http://www.acshr.org.pk/ </a>
-          <br><strong class="text-dark">FACEBOOK: </strong> ALLIANCE OF THE CIVIL SOCIETY FOR HUMAN RIGHTS
-        </p>
-
-      </div><br><br>
-
-
-      <!-- Branches section -->
-      <h2 class="branchSec-h2">Country Side Branches</h2>
-      <div class="branchSection" id="branchSection" data-aos="fade-down">
-
-      </div>
-      <br /><br />
-      <br /><br />
-      <br /><br />
-
-      <div class="div" data-aos="fade-up">
-        <!-- heroGif -->
-        <div class="heroGif">
-          <div class="trusted"></div>
+        <!-- header -->
+        <div class="header">
+          <h2 data-aos="fade-up">Contact</h2>
+          <p data-aos="fade-up">
+            "Welcome to ACSHR's Contact Page! We're delighted to connect with
+            you and answer any inquiries you may have. Whether you're seeking
+            contact assistance, have feedback, or just want to say hello, our
+            team is here to help. Sove your queries with us ..."
+          </p>
         </div>
 
-        <!-- satisfy section -->
-        <div class="satisfy">
-          <div class="text">
-            <h2 class="satisfytext">"Satisfy "</h2>
-            <h3>"Your Every Need"</h3>
-            <p> "At ACSHR, we bring your hopes and dreams to life with an unparalleled variety of support services. From
-              essential resources to comprehensive assistance programs, our efforts are crafted to uplift your
-              well-being
-              and enhance your quality of life. Discover new opportunities and reliable support, expertly designed to
-              address every need you have. Join us on a meaningful journey, where every step is an adventure toward a
-              brighter future."
-            </p>
-
-          </div>
-          <div class="img">
-            <img src="../aseets/contact img/roundName.png" class="standIcon">
-            <img src="../aseets/contact img/web-icon.png" class="roundName">
-          </div>
+        <!-- discover div -->
+        <div class="discover">
+          <h2 class="heading" data-aos="fade-down">Connecting with Our Team</h2>
+          <p class="text" data-aos="fade-up">
+            Thank you for reaching out to us! We deeply value your inquiry and
+            assure you that one of our dedicated team members will contact you
+            soon. To provide you with the best service possible, you may hear
+            from representatives of Member Evolution or our parent company,
+            Aspedia Australia. Additionally, if you're looking to visit our
+            offices or headquarters, you'll find Nordea's presence in various
+            locations across the globe, with addresses available for both our
+            headquarters and local offices.
+          </p>
         </div>
         <br /><br />
-      </div>
 
-
-      <!-- donate section -->
-      <div class="container" id="donate" data-aos="fade-up">
-        <div class="discover p-1">
-          <h2 class="heading text-center" data-aos="fade-down">Support Through Generous Donations</h2>
-          <p class="text text-center  mx-auto" data-aos="fade-up">
-            Donations empower our mission to provide education, distribute zakat, and offer shelter to those in
-            need. Your contributions make a significant impact, transforming lives and fostering a brighter, more
-            equitable future for all.
+        <!-- discover div -->
+        <div class="discover text-left" data-aos="fade-up">
+          <h2 class="heading" data-aos="fade-up">Head Office - Karachi</h2>
+          <p class="text" data-aos="flip-down">
+            <br /><strong class="text-dark">ADDRESS: </strong> A-104/1 (Old)
+            A-147/1 (New), Sachal Goth Residency, Near PCSIR Scheme 33, District
+            East Karachi, Sindh, Pakistan. <br /><strong class="text-dark">
+              PHONE:
+            </strong>
+            +92-332-878 6028 | +92-300-257 5133 <br /><strong class="text-dark">
+              EMAIL:
+            </strong>
+            <a href="mailto:acshr2021@gmail.com" style="color: #0c860d"
+              >acshr2021@gmail.com</a
+            >
+            /
+            <a href="mailto:info@acshr.org.pk" style="color: #0c860d"
+              >info@acshr.org.pk</a
+            >
+            <br /><strong class="text-dark"> WEBSITE: </strong>
+            <a
+              href="http://www.acshr.org.pk/"
+              target="_blank"
+              style="color: #0c860d"
+            >
+              http://www.acshr.org.pk/
+            </a>
+            <br /><strong class="text-dark">FACEBOOK: </strong> ALLIANCE OF THE
+            CIVIL SOCIETY FOR HUMAN RIGHTS
           </p>
         </div>
+        <br /><br />
 
-        <div class="d-flex align-items-center   justify-content-around  flex-lg-row  flex-column text-center">
-          <div class="row">
-            <div class="col text-center">
-              <div class="card rounded-2 mb-2  mx-auto">
-                <div class="text-center p-3 ">
-                  <img
-                    src=" https://static.vecteezy.com/system/resources/thumbnails/035/473/314/small/ai-generated-a-young-child-holding-a-book-and-smiling-surrounded-by-school-supplies-like-pencils-and-notebooks-free-photo.jpg"
-                    class="img-fluid rounded-3 cardimg" alt="img" width="300px" style="height: 300px !important;">
+        <!-- Branches section -->
+        <h2 class="branchSec-h2">Country Side Branches</h2>
+        <div
+          class="branchSection"
+          id="branchSection"
+          data-aos="fade-down"
+        ></div>
+        <br /><br />
+        <br /><br />
+        <br /><br />
+
+        <div class="div" data-aos="fade-up">
+          <!-- heroGif -->
+          <div class="heroGif">
+            <div class="trusted"></div>
+          </div>
+
+          <!-- satisfy section -->
+          <div class="satisfy">
+            <div class="text">
+              <h2 class="satisfytext">"Satisfy "</h2>
+              <h3>"Your Every Need"</h3>
+              <p>
+                "At ACSHR, we bring your hopes and dreams to life with an
+                unparalleled variety of support services. From essential
+                resources to comprehensive assistance programs, our efforts are
+                crafted to uplift your well-being and enhance your quality of
+                life. Discover new opportunities and reliable support, expertly
+                designed to address every need you have. Join us on a meaningful
+                journey, where every step is an adventure toward a brighter
+                future."
+              </p>
+            </div>
+            <div class="img">
+              <img
+                src="../aseets/contact img/roundName.png"
+                class="standIcon"
+              />
+              <img src="../aseets/contact img/web-icon.png" class="roundName" />
+            </div>
+          </div>
+          <br /><br />
+        </div>
+
+        <!-- donate section -->
+        <div class="container" id="donate" data-aos="fade-up">
+          <div class="discover p-1">
+            <h2 class="heading text-center" data-aos="fade-down">
+              Support Through Generous Donations
+            </h2>
+            <p class="text text-center mx-auto" data-aos="fade-up">
+              Donations empower our mission to provide education, distribute
+              zakat, and offer shelter to those in need. Your contributions make
+              a significant impact, transforming lives and fostering a brighter,
+              more equitable future for all.
+            </p>
+          </div>
+
+          <div
+            class="d-flex align-items-center justify-content-around flex-lg-row flex-column text-center"
+          >
+            <div class="row">
+              <div class="col text-center">
+                <div class="card rounded-2 mb-2 mx-auto">
+                  <div class="text-center p-3">
+                    <img
+                      src=" https://static.vecteezy.com/system/resources/thumbnails/035/473/314/small/ai-generated-a-young-child-holding-a-book-and-smiling-surrounded-by-school-supplies-like-pencils-and-notebooks-free-photo.jpg"
+                      class="img-fluid rounded-3 cardimg"
+                      alt="img"
+                      width="300px"
+                      style="height: 300px !important"
+                    />
+                  </div>
+
+                  <h2 class="mt-4 mb-3 bankheading">Education</h2>
+                  <p
+                    class="text-dark mt-1 p-2 mb-3 mx-auto banktextpara"
+                    style="font-family: title"
+                  >
+                    Empowering individuals with knowledge, fostering growth,
+                    social mobility, and contributing to societal development
+                    and innovation.
+                  </p>
+
+                  <div>
+                    <button
+                      type="button"
+                      class="btn text-light btn-outline-success mb-5 m-1"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                      data-bs-whatever="@mdo"
+                      style="background-color: #0c860d; font-family: title"
+                    >
+                      Donate Now
+                    </button>
+                  </div>
                 </div>
+              </div>
 
-                <h2 class="mt-4 mb-3 bankheading">Education</h2>
-                <p class="text-dark mt-1 p-2 mb-3 mx-auto banktextpara" style=" font-family: title;">
-                  Empowering individuals with knowledge, fostering growth, social mobility, and contributing to societal
-                  development and innovation.
-                </p>
+              <div class="col text-center">
+                <div class="card rounded-2 mb-2 mx-auto">
+                  <div class="text-center p-3">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Street_children_in_India.jpg/250px-Street_children_in_India.jpg"
+                      class="img-fluid cardimg rounded-3"
+                      alt="img"
+                      width="300px"
+                      style="height: 300px !important"
+                    />
+                  </div>
 
+                  <h2 class="mt-4 mb-3 bankheading">Zakat</h2>
+                  <p
+                    class="text-dark mt-1 p-2 banktextpara mx-auto mb-3"
+                    style="font-family: title"
+                  >
+                    An essential Islamic practice for wealth purification,
+                    supporting the needy, and promoting social justice and
+                    economic balance.
+                  </p>
+
+                  <div>
+                    <button
+                      type="button"
+                      class="btn text-light btn-outline-success mb-5 m-1"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                      data-bs-whatever="@mdo"
+                      style="background-color: #0c860d; font-family: title"
+                    >
+                      Donate Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col text-center">
+                <div class="card rounded-2 mb-2 mx-auto">
+                  <div class="text-center p-3">
+                    <img
+                      src="../aseets/imgs/shelter-(18).jpg"
+                      class="img-fluid rounded-2 cardimg"
+                      alt="img"
+                      width="300px"
+                      style="height: 300px !important"
+                    />
+                  </div>
+
+                  <h2 class="bankheading mt-4 mb-3 bankheading">Shelter</h2>
+                  <p
+                    class="text-dark mt-1 p-2 mb-3 mx-auto banktextpara"
+                    style="font-family: title"
+                  >
+                    Basic necessity ensuring safety, stability, and dignity,
+                    providing protection from elements and fostering healthy,
+                    productive lives.
+                  </p>
+
+                  <div>
+                    <button
+                      type="button"
+                      class="btn text-light btn-outline-success mb-5 m-1"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                      data-bs-whatever="@mdo"
+                      style="background-color: #0c860d; font-family: title"
+                    >
+                      Donate Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bank Details Modal -->
+        <div
+          class="modal fade text-dark"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title text-dark fs-5" id="exampleModalLabel">
+                  BANK DETAILS
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close text-dark"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <div class="modal-body text-dark text-left">
+                <button
+                  class="btn btn-outline-success p-2 rounded-3 text-light"
+                  style="background-color: #0c860d; font-family: title"
+                >
+                  Donate to our development and humanitarian projects with a
+                  bank/online transfer using the following details:
+                </button>
+                <div class="bankdetails mt-3">
+                  <strong class="text-dark mt-2 mb-3"
+                    >Bank account Title:
+                  </strong>
+                  Alliance of the Civil society For Human Rights
+                </div>
+                <div class="bankdetails">
+                  <strong class="text-dark mt-2 mb-3"
+                    >Bank account with IBN # :
+                  </strong>
+                  PK67NBPA 0085004100005750
+                </div>
+                <div class="bankdetails">
+                  <strong class="text-dark mt-2 mb-3">Bank Name : </strong>
+                  National Bank of Pakistan (NBP)
+                </div>
+                <div class="bankdetails">
+                  <strong class="text-dark mt-2 mb-3">Branch : </strong> Main
+                  FBR Branch Karachi, Sindh, Pakistan
+                </div>
+                <div class="bankdetails">
+                  <strong class="text-dark mt-2 mb-3"
+                    >Facbook link visit :
+                  </strong>
+                  <a
+                    href="https://www.facebook.com/p/Acshr-PAKISTAN-100083460453968/?locale=en_GB"
+                    target="_blank"
+                    style="color: #92c42d"
+                    >&nbsp;&nbsp; ➛ ACSHR click me
+                  </a>
+                </div>
+                <br /><br />
                 <div>
-                  <button type="button" class="btn text-light btn-outline-success mb-5 m-1" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal" data-bs-whatever="@mdo"
-                    style="background-color: #0C860D;font-family: title;"> Donate
-                    Now</button>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="col text-center">
-              <div class="card rounded-2 mb-2  mx-auto">
-
-                <div class="text-center p-3 ">
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Street_children_in_India.jpg/250px-Street_children_in_India.jpg"
-                    class="img-fluid cardimg rounded-3" alt="img" width="300px" style="height: 300px !important;">
-                </div>
-
-                <h2 class="mt-4 mb-3 bankheading">Zakat</h2>
-                <p class="text-dark mt-1 p-2 banktextpara  mx-auto mb-3" style="font-family: title;">
-                  An essential Islamic practice for wealth purification, supporting the needy, and promoting social
-                  justice
-                  and economic balance.
-                </p>
-
-                <div>
-                  <button type="button" class="btn text-light btn-outline-success mb-5 m-1" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal" data-bs-whatever="@mdo"
-                    style="background-color: #0C860D; font-family: title;"> Donate
-                    Now</button>
+                  <button
+                    type="button"
+                    class="btn w-100 text-light mb-5 m-1 fw-bold"
+                    data-bs-toggle="modal" data-bs-target="#donarBillingDetails" 
+                    style="
+                      background-color: #92c42d;
+                      font-family: title;
+                      text-shadow: 1px 1px 1px black;
+                      margin: 0 auto !important;
+                    "
+                    id="checkDonar"
+                  >
+                    "Add your details here"
+                  </button>
                 </div>
               </div>
             </div>
-
-            <div class="col  text-center">
-              <div class="card rounded-2 mb-2  mx-auto">
-                <div class="text-center p-3">
-                  <img src="../aseets/imgs/shelter-(18).jpg" class="img-fluid rounded-2 cardimg" alt="img" width="300px"
-                    style="height: 300px !important;">
-                </div>
-
-                <h2 class="bankheading mt-4 mb-3 bankheading">Shelter</h2>
-                <p class="text-dark mt-1 p-2 mb-3  mx-auto banktextpara" style="font-family: title;">
-                  Basic necessity ensuring safety, stability, and dignity, providing protection from elements and
-                  fostering
-                  healthy, productive lives.
-                </p>
-
-                <div>
-                  <button type="button" class="btn text-light btn-outline-success mb-5 m-1" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal" data-bs-whatever="@mdo"
-                    style="background-color: #0C860D;font-family: title;"> Donate
-                    Now</button>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-
-
-        </div>
-
-
-      </div>
-
-      <!-- Bank Details Modal -->
-      <div class="modal fade text-dark " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-
-            <div class="modal-header">
-              <h1 class="modal-title  text-dark fs-5" id="exampleModalLabel">BANK DETAILS</h1>
-              <button type="button" class="btn-close text-dark" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-
-            <div class="modal-body text-dark text-left">
-              <button class="btn btn-outline-success p-2 rounded-3">
-                Donate to our development and humanitarian projects with a bank/online transfer using the
-                following
-                details:
-              </button>
-              <div class="bankdetails mt-3">
-                <strong class="text-dark mt-2 mb-3">Bank account Title: </strong> Alliance of the Civil society
-                For Human Rights
-              </div>
-              <div class="bankdetails">
-                <strong class="text-dark mt-2 mb-3">Bank account with IBN # : </strong> PK67NBPA 0085004100005750
-              </div>
-              <div class="bankdetails">
-                <strong class="text-dark mt-2 mb-3">Bank Name : </strong> National Bank of Pakistan (NBP)
-              </div>
-              <div class="bankdetails">
-                <strong class="text-dark mt-2 mb-3">Branch : </strong> Main FBR Branch Karachi, Sindh, Pakistan
-              </div>
-              <div class="bankdetails">
-                <strong class="text-dark mt-2 mb-3">Facbook link visit : </strong> <a
-                  href="https://www.facebook.com/p/Acshr-PAKISTAN-100083460453968/?locale=en_GB" target="_blank"
-                  style="color: #0C860D;">&nbsp;&nbsp; ➛ ACSHR click me </a>
-              </div>
-              <br><br>
-              <div>
-                <button type="button" class="btn text-light btn-outline-success mb-5 m-1" data-bs-toggle="modal"
-                  data-bs-target="#exampleModal" data-bs-whatever="@mdo"
-                  style="background-color: #0C860D;font-family: title;">"Join us in making a change" <br> Add your
-                  details here and let your donation create a lasting impact.</button>
-              </div>
-            </div>
-
           </div>
         </div>
-      </div>
-      <br /><br /><br><br>
+        <br /><br /><br /><br />
 
+        <!-- donar details -->
+        <!-- Modal -->
+        <div class="modal fade" id="donarBillingDetails" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" style="color: var(--darkGreen);" id="exampleModalLabel">Donar Billing Details.</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form class="needs-validation" id="donarInformation">
+                  <div class="row g-3">
+                    <div class="col-sm-6">
+                      <label for="firstName" class="form-label" style="color: var(--darkGreen); font-size: 15px;"> First name</label>
+                      <input type="text" class="form-control" id="firstName" placeholder="Enter first name" style="color: var(--darkGreen); font-size: 15px;"  name="donar_FirstName" required="true">
+                      <div class="invalid-feedback">
+                        Valid first name is required.
+                      </div>
+                    </div>
+        
+                    <div class="col-sm-6">
+                      <label for="lastName" class="form-label" style="color: var(--darkGreen); font-size: 15px;">Last name</label>
+                      <input type="text" class="form-control" id="lastName" placeholder="Enter last name" style="color: var(--darkGreen); font-size: 15px;"  name="donar_LastName" required="true">
+                      <div class="invalid-feedback">
+                        Valid last name is required.
+                      </div>
+                    </div>
+        
+                    <div class="col-12">
+                      <label for="donarEmail" class="form-label" style="color: var(--darkGreen); font-size: 15px;">Email</label>
+                      <div class="input-group has-validation">
+                        <span class="input-group-text">@</span>
+                        <input type="text" class="form-control" id="donarEmail" placeholder="Enter email" name="donar_Email" required="true">
+                      <div class="invalid-feedback">
+                        Please enter a valid email address.
+                        </div>
+                      </div>
+                    </div>
 
-      <!-- Contact Section -->
-      <section class="contact-form ">
-        <h2 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">Get in Touch With</h2>
-        <p data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
-          style="color: rgb(255, 255, 255); text-shadow: 1px 1px 1px #0C860D;">Got a question or feedback? We're here
-          to help! Reach out to your nearest
-          ACSHR's branch and let's make your experience even better.</p>
-        <div class="contactForm">
+                    <div class="col-12">
+                      <label for="donarPhone" class="form-label" style="color: var(--darkGreen); font-size: 15px;">Phone</label>
+                      <div class="input-group has-validation">
+                        <span class="input-group-text">#</span>
+                        <input type="text" class="form-control" maxlength="11" id="donarPhone" placeholder="Enter phone number" name="donar_Phone" required="true">
+                      <div class="invalid-feedback">
+                        Please enter a valid max 11 digit +92XXXXXXXXX number.
+                        </div>
+                      </div>
+                    </div>
 
+                    <div class="col-12">
+                      <label for="companyName" class="form-label" style="color: var(--darkGreen); font-size: 15px;">Company (optional)</label>
+                      <input type="text" class="form-control" id="companyName" placeholder="Company name ..">
+                      <div class="invalid-feedback">
+                        Please enter your company name .
+                      </div>
+                    </div>
 
-          <form id="contactForm">
-            <input type="text" name="from_name" class="input" placeholder="Your Name" required>
-            <input type="email" name="from_email" class="input" placeholder="Your Email" required>
-            <input type="text" name="subject" class="input" placeholder="Your Subject" required>
-            <textarea name="message" class="input" cols="30" rows="5" placeholder="Your Message..." required></textarea>
-            <input type="submit" class="input submit" value="Send Message">
-          </form>
+                    <div class="col-12">
+                      <label for="donarAdress" class="form-label" style="color: var(--darkGreen); font-size: 15px;">Address</label>
+                      <input type="text" class="form-control" id="donarAdress" placeholder="1234 Main .." name="donar_Adress" required="true">
+                      <div class="invalid-feedback">
+                        Please enter your actual address.
+                      </div>
+                    </div>
+        
+                    <div class="col-12">
+                      <label for="address2" class="form-label" style="color: var(--darkGreen); font-size: 15px;">Street / Apartment (Optional)</label>
+                      <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                    </div>
+        
+                    <div class="col-md-5">
+                      <label for="country" class="form-label" style="color: var(--darkGreen); font-size: 15px;">Country</label>
+                      <select class="form-select" id="country" name="donar_Country" required="true">
+                        <option value="" class="text-body-secondary">Choose...</option>
+                        <option value="Afghanistan" class="text-body-secondary">Afghanistan</option>
+                        <option value="Australia" class="text-body-secondary">Australia</option>
+                        <option value="Austria" class="text-body-secondary">Austria</option>
+                        <option value="Argentina" class="text-body-secondary">Argentina</option>
+                        <option value="Bahrain" class="text-body-secondary">Bahrain</option>
+                        <option value="Bangladesh" class="text-body-secondary">Bangladesh</option>
+                        <option value="Brazil" class="text-body-secondary">Brazil</option>
+                        <option value="Canada" class="text-body-secondary">Canada</option>
+                        <option value="China" class="text-body-secondary">China</option>
+                        <option value="Colombia" class="text-body-secondary">Colombia</option>
+                        <option value="Denmark" class="text-body-secondary">Denmark</option>
+                        <option value="Egypt" class="text-body-secondary">Egypt</option>
+                        <option value="Fiji" class="text-body-secondary">Fiji</option>
+                        <option value="Finland" class="text-body-secondary">Finland</option>
+                        <option value="France" class="text-body-secondary">France</option>
+                        <option value="Georgia" class="text-body-secondary">Georgia</option>
+                        <option value="Germany" class="text-body-secondary">Germany</option>
+                        <option value="Hungary" class="text-body-secondary">Hungary</option>
+                        <option value="Iceland" class="text-body-secondary">Iceland</option>
+                        <option value="India" class="text-body-secondary">India</option>
+                        <option value="Indonesia" class="text-body-secondary">Indonesia</option>
+                        <option value="Iran" class="text-body-secondary">Iran</option>
+                        <option value="Iraq" class="text-body-secondary">Iraq</option>
+                        <option value="Israel" class="text-body-secondary">Israel</option>
+                        <option value="Italy" class="text-body-secondary">Italy</option>
+                        <option value="Jamaica" class="text-body-secondary">Jamaica</option>
+                        <option value="Japan" class="text-body-secondary">Japan</option>
+                        <option value="Kenya" class="text-body-secondary">Kenya</option>
+                        <option value="Lebanon" class="text-body-secondary">Lebanon</option>
+                        <option value="Malaysia" class="text-body-secondary">Malaysia</option>
+                        <option value="Nepal" class="text-body-secondary">Nepal</option>
+                        <option value="Oman" class="text-body-secondary">Oman</option>
+                        <option value="Pakistan" class="text-body-secondary">Pakistan</option>
+                        <option value="Qatar" class="text-body-secondary">Qatar</option>
+                        <option value="Russia" class="text-body-secondary">Russia</option>
+                        <option value="South Africa" class="text-body-secondary">South Africa</option>
+                        <option value="Thailand" class="text-body-secondary">Thailand</option>
+                        <option value="United Kingdom" class="text-body-secondary">United Kingdom</option>
+                        <option value="United States" class="text-body-secondary">United States</option>
+                        <option value="Venezuela" class="text-body-secondary">Venezuela</option>
+                        <option value="Yemen" class="text-body-secondary">Yemen</option>
+                        <option value="Zambia" class="text-body-secondary">Zambia</option>
+                        <option value="Zimbabwe" class="text-body-secondary">Zimbabwe</option>
+                      </select>
+                      
+                      
+                      <div class="invalid-feedback">
+                        Please select a valid country.
+                      </div>
+                    </div>
+        
+                    <div class="col-md-3">
+                      <label for="zip" class="form-label" style="color: var(--darkGreen); font-size: 15px;">Postal code</label>
+                      <input type="text" class="form-control" id="zip" placeholder="zip.." required="">
+                      <div class="invalid-feedback">
+                        Zip code required.
+                      </div>
+                    </div>
+                  </div>
 
+                  <br>
 
-          <div class="img2 d-none  d-lg-block" data-aos="fade-up">
-            <img src="../aseets/contact img/girl.png" alt="img">
+                  <div class="text-success">
+                    <hr>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="donarFeedback" class="form-label"  style="color: var(--darkGreen); font-size: 15px;">Additional Feedback</label>
+                    <textarea class="form-control" id="donarFeedback" rows="3" placeholder="message here!"></textarea>
+                  </div>
+
+                  <button class="w-100 btn"  style="background-color: var(--darkGreen); font-size: 15px;color: var(--white);" type="submit">Submit</button>
+                </form>
+              </div>
+            </div>
           </div>
-
         </div>
 
-      </section>
-
-      <!-- galery section -->
-      <div class="gallery swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="./aseets/imgs/gal-(1).png" class="galeryImg" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./aseets/imgs/gal-(2).png" class="galeryImg" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./aseets/imgs/gal-(3).png" class="galeryImg" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./aseets/imgs/gal-(4).png" class="galeryImg" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./aseets/imgs/gal-(5).png" class="galeryImg" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./aseets/imgs/gal-(6).png" class="galeryImg" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./aseets/imgs/gal-(7).png" class="galeryImg" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./aseets/imgs/gal-(8).png" class="galeryImg" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./aseets/imgs/gal-(9).png" class="galeryImg" />
-          </div>
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script>
-          var swiper = new Swiper(".gallery", {
-            slidesPerView: 6,
-            spaceBetween: 5,
-            loop: true,
-            centeredSlides: true,
-            autoplay: {
-              delay: 500,
-              disableOnInteraction: false,
-            },
-            speed: 1500,
-            breakpoints: {
-              280: {
-                slidesPerView: 2,
-                spaceBetween: 0,
-              },
-              340: {
-                slidesPerView: 2,
-                spaceBetween: 0,
-              },
-              440: {
-                slidesPerView: 2,
-                spaceBetween: 0,
-              },
-              540: {
-                slidesPerView: 3,
-                spaceBetween: 0,
-              },
-              640: {
-                slidesPerView: 3,
-                spaceBetween: 0,
-              },
-              768: {
-                slidesPerView: 4,
-                spaceBetween: 40,
-              },
-              1024: {
-                slidesPerView: 7,
-                spaceBetween: 50,
-              },
-            },
-          });
-        </script>
-      </div>
-      <br>
-      <!-- footer -->
-      <div class="footer">
-        <div class="footerAbout" data-aos="fade-up">
-          <img src="../aseets/contact img/web-icon.png" class="footerLogo" width="100" height="100" />
-          <p>
-            ACSHR strives to ultimately see a stable and economical strong Pakistani society living in harmony, peace,
-            good governance, rule of law, human rights and sustainable resource management.
+        <!-- Contact Section -->
+        <section class="contact-form">
+          <h2 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+            Get in Touch With
+          </h2>
+          <p
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+            style="color: rgb(255, 255, 255); text-shadow: 1px 1px 1px #0c860d"
+          >
+            Got a question or feedback? We're here to help! Reach out to your
+            nearest ACSHR's branch and let's make your experience even better.
           </p>
-          <div class="links">
-            <a href="Javascript:void(0)">
-              <img src="./aseets/icons/navIcons-(1).png" width="30" height="30"
-                class="footerLink blackGlow google" /></a>
+          <div class="contactForm">
+            <form id="contactForm">
+              <input
+                type="text"
+                name="from_name"
+                class="input"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                name="from_email"
+                class="input"
+                placeholder="Your Email"
+                required
+              />
+              <input
+                type="text"
+                name="subject"
+                class="input"
+                placeholder="Your Subject"
+                required
+              />
+              <textarea
+                name="message"
+                class="input"
+                cols="30"
+                rows="5"
+                placeholder="Your Message..."
+                required
+              ></textarea>
+              <input type="submit" class="input submit" value="Send Message" />
+            </form>
 
-            <a href="Javascript:void(0)">
-              <img src="./aseets/icons/navIcons-(3).png" width="30" height="30"
-                class="footerLink blackGlow linkedin" /></a>
+            <div class="img2 d-none d-lg-block" data-aos="fade-up">
+              <img src="../aseets/contact img/girl.png" alt="img" />
+            </div>
+          </div>
+        </section>
 
-            <a href="https://www.facebook.com/p/Acshr-PAKISTAN-100083460453968/?locale=en_GB" target="_blank">
-              <img src="./aseets/icons/navIcons-(4).png" width="30" height="30"
-                class="footerLink blackGlow facebook" /></a>
+        <!-- galery section -->
+        <div class="gallery swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./aseets/imgs/gal-(1).png" class="galeryImg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./aseets/imgs/gal-(2).png" class="galeryImg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./aseets/imgs/gal-(3).png" class="galeryImg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./aseets/imgs/gal-(4).png" class="galeryImg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./aseets/imgs/gal-(5).png" class="galeryImg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./aseets/imgs/gal-(6).png" class="galeryImg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./aseets/imgs/gal-(7).png" class="galeryImg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./aseets/imgs/gal-(8).png" class="galeryImg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./aseets/imgs/gal-(9).png" class="galeryImg" />
+            </div>
+          </div>
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+          <script>
+            var swiper = new Swiper(".gallery", {
+              slidesPerView: 6,
+              spaceBetween: 5,
+              loop: true,
+              centeredSlides: true,
+              autoplay: {
+                delay: 500,
+                disableOnInteraction: false,
+              },
+              speed: 1500,
+              breakpoints: {
+                280: {
+                  slidesPerView: 2,
+                  spaceBetween: 0,
+                },
+                340: {
+                  slidesPerView: 2,
+                  spaceBetween: 0,
+                },
+                440: {
+                  slidesPerView: 2,
+                  spaceBetween: 0,
+                },
+                540: {
+                  slidesPerView: 3,
+                  spaceBetween: 0,
+                },
+                640: {
+                  slidesPerView: 3,
+                  spaceBetween: 0,
+                },
+                768: {
+                  slidesPerView: 4,
+                  spaceBetween: 40,
+                },
+                1024: {
+                  slidesPerView: 7,
+                  spaceBetween: 50,
+                },
+              },
+            });
+          </script>
+        </div>
+        <br />
+        <!-- footer -->
+        <div class="footer">
+          <div class="footerAbout" data-aos="fade-up">
+            <img
+              src="../aseets/contact img/web-icon.png"
+              class="footerLogo"
+              width="100"
+              height="100"
+            />
+            <p>
+              ACSHR strives to ultimately see a stable and economical strong
+              Pakistani society living in harmony, peace, good governance, rule
+              of law, human rights and sustainable resource management.
+            </p>
+            <div class="links">
+              <a href="Javascript:void(0)">
+                <img
+                  src="./aseets/icons/navIcons-(1).png"
+                  width="30"
+                  height="30"
+                  class="footerLink blackGlow google"
+              /></a>
 
-            <a href="Javascript:void(0)">
-              <img src="./aseets/icons/navIcons-(5).png" width="30" height="30"
-                class="footerLink blackGlow tiktok" /></a>
+              <a href="Javascript:void(0)">
+                <img
+                  src="./aseets/icons/navIcons-(3).png"
+                  width="30"
+                  height="30"
+                  class="footerLink blackGlow linkedin"
+              /></a>
+
+              <a
+                href="https://www.facebook.com/p/Acshr-PAKISTAN-100083460453968/?locale=en_GB"
+                target="_blank"
+              >
+                <img
+                  src="./aseets/icons/navIcons-(4).png"
+                  width="30"
+                  height="30"
+                  class="footerLink blackGlow facebook"
+              /></a>
+
+              <a href="Javascript:void(0)">
+                <img
+                  src="./aseets/icons/navIcons-(5).png"
+                  width="30"
+                  height="30"
+                  class="footerLink blackGlow tiktok"
+              /></a>
+            </div>
+          </div>
+          <div class="footerLinks" data-aos="fade-down">
+            <h2>About Links</h2>
+            <div>
+              <p>
+                <span
+                  ><img
+                    src="../aseets/icons/footerIcons-(3).png"
+                    width="30"
+                    height="30"
+                /></span>
+              </p>
+              <p>
+                Sachal Goth Residency<span
+                  >District East Karachi, Sindh, Pakistan
+                </span>
+              </p>
+            </div>
+            <div>
+              <p>
+                <span
+                  ><img
+                    src="../aseets/icons/footerIcons-(2).png"
+                    width="30"
+                    height="30"
+                /></span>
+              </p>
+              <p>
+                Get Touch with<span> +92-332-878 6028 </span
+                ><span> +92-300-257 5133 </span>
+              </p>
+            </div>
+            <div>
+              <p>
+                <span
+                  ><img
+                    src="../aseets/icons/footerIcons-(1).png"
+                    width="30"
+                    height="30"
+                /></span>
+              </p>
+              <p>Get Recent Update<span>www.acshr.org.pk</span></p>
+            </div>
+          </div>
+          <div class="footerImgs" data-aos="fade-up">
+            <h2>Location</h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14469.6345469691!2d67.11321412211105!3d24.952207965937735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb3388318252ead%3A0x3b6d94b040b4b7ed!2sSachal%20Goth%20Gulzar%20E%20Hijri%20Scheme%2033%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1715377034451!5m2!1sen!2s"
+            ></iframe>
           </div>
         </div>
-        <div class="footerLinks" data-aos="fade-down">
-          <h2>About Links</h2>
-          <div>
-            <p>
-              <span><img src="../aseets/icons/footerIcons-(3).png" width="30" height="30" /></span>
-            </p>
-            <p>Sachal Goth Residency<span>District East Karachi, Sindh, Pakistan
-              </span></p>
-          </div>
-          <div>
-            <p>
-              <span><img src="../aseets/icons/footerIcons-(2).png" width="30" height="30" /></span>
-            </p>
-            <p>Get Touch with<span> +92-332-878 6028 </span><span> +92-300-257 5133 </span> </p>
-          </div>
-          <div>
-            <p>
-              <span><img src="../aseets/icons/footerIcons-(1).png" width="30" height="30" /></span>
-            </p>
-            <p>Get Recent Update<span>www.acshr.org.pk</span></p>
-          </div>
-        </div>
-        <div class="footerImgs" data-aos="fade-up">
-          <h2>Location</h2>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14469.6345469691!2d67.11321412211105!3d24.952207965937735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb3388318252ead%3A0x3b6d94b040b4b7ed!2sSachal%20Goth%20Gulzar%20E%20Hijri%20Scheme%2033%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1715377034451!5m2!1sen!2s"></iframe>
+        <div class="footerEnd">
+          <hr />
+          <br />
+          <p>© <span class="year">2025</span> ACSHR. All Rights Reserved.</p>
+          <br />
         </div>
       </div>
-      <div class="footerEnd">
-        <hr />
-        <br />
-        <p>
-          © <span class="year">2025</span> ACSHR. All Rights Reserved.
-        </p>
-        <br />
-      </div>
-
     </div>
-  </div>
 
-  <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://unpkg.com/@popperjs/core@2"></script>
-  <script src="https://unpkg.com/tippy.js@6"></script>
-  <script type="module" src="./contact.js"></script>
-</body>
-
+    <script
+      src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/email.min.js"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script type="module" src="./contact.js"></script>
+  </body>
 </html>

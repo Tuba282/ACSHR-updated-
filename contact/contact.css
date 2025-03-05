@@ -140,7 +140,7 @@ a {
 }
 
 .changeColor {
-  background: #61624750;
+  background: #34313149;
   backdrop-filter: blur(10px);
 }
 
@@ -505,6 +505,7 @@ h2:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  filter: drop-shadow(0px 0px 1px black);
 }
 
 .branchImg img {
@@ -517,12 +518,16 @@ h2 {
 }
 
 .contactbranch .city {
-  font-size: 35px;
-  font-weight: 600;
-  font-family: rough;
-  color: var(--darkGreen) !important;
-  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 900 ;
+  background: #92c42d;
+  padding: 0px 3px;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 5px;
+  font-family: "Poiret One", serif;
+  color: var(--white) !important;
   text-transform: capitalize !important;
+  margin-bottom: 5px;
 }
 
 .contactbranch .phone,
